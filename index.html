@@ -1,0 +1,2070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Botox &amp; Dysport in Traverse City | $9.99 Per Unit | Eternal Wellness Medical Spa</title>
+<meta name="description" content="FDA-approved wrinkle relaxers under board-certified medical oversight in downtown Traverse City. $9.99 per unit for new clients, limited time.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Karla:wght@400;500;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ===================================================================
+   ETERNAL WELLNESS - INJECTABLES LANDING PAGE
+   Desktop reference: "desktop 4" @ 1440px. Fluid full-width above.
+   =================================================================== */
+
+:root{
+  --black:#000000;
+  --white:#FFFFFF;
+  --clay:#926D5C;
+  --clay-hover:#7D5C4C;
+  --clay-light:#A88575;
+  --cocoa:#7D5C4C;
+  --espresso:#392E26;
+  --gold:#A4853C;
+  --greige:#EEE9E4;
+  --greige-deep:#E3DDD6;
+  --pale-sand:#C8B9A8;
+  --warm-white:#F7F4F1;
+  --near-black:#1A1A1A;
+  --overlay-warm:#1F0C04;
+  --trust-bg:#3D2C20;
+  --card-grey:#F1F1F1;
+  --hairline:#D9D9D9;
+  --border-default:#0000001A;
+  --border-inverse:#FFFFFF33;
+  --text-primary:#000000;
+  --text-secondary:#000000B3;
+  --text-tertiary:#00000096;
+  --text-inverse:#FFFFFF;
+  --text-inverse-muted:#FFFFFFBF;
+
+  --font-heading:'Marcellus', 'Times New Roman', serif;
+  --font-body:'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-eyebrow:'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* 80px at 1440px, fluid below, locked above -> page always fills the screen */
+  --gutter:clamp(20px, 5.5556vw, 80px);
+
+  /* Vertical rhythm is expressed against the viewport, never in fixed pixels.
+     svh (small viewport height) keeps mobile browser chrome from cropping a
+     full-height section; the vh line above each one is the legacy fallback. */
+  --section-y:clamp(56px, 12.45vh, 112px);
+  --section-y:clamp(56px, 12.45svh, 112px);
+  --section-y-sm:clamp(48px, 9.78vh, 88px);
+  --section-y-sm:clamp(48px, 9.78svh, 88px);
+  --band-y:clamp(40px, 7.11vh, 64px);
+  --band-y:clamp(40px, 7.11svh, 64px);
+  --car-h:clamp(460px, 47.3vw, 680px);
+  --car-h:clamp(460px, min(75.6vh, 47.3vw), 680px);
+  --car-h:clamp(460px, min(75.6svh, 47.3vw), 680px);
+
+  --shadow-btn:0 2px 8px rgba(146,109,92,.2);
+  --shadow-btn-hover:0 4px 16px rgba(146,109,92,.3);
+}
+
+*,*::before,*::after{box-sizing:border-box;}
+html{-webkit-text-size-adjust:100%;}
+html.lenis,html.lenis body{height:auto;}
+.lenis.lenis-smooth{scroll-behavior:auto !important;}
+body{
+  margin:0;
+  width:100%;
+  background:var(--white);
+  color:var(--text-primary);
+  font-family:var(--font-body);
+  font-size:15px;
+  line-height:1.5;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block;}
+[hidden]{display:none !important;}
+a{color:inherit;text-decoration:none;}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;}
+h1,h2,h3,h4,p,blockquote,figure{margin:0;}
+cite{font-style:normal;}
+ul{margin:0;padding:0;list-style:none;}
+:focus-visible{outline:2px solid var(--clay);outline-offset:2px;}
+.hero :focus-visible,.footer :focus-visible,.band :focus-visible,.trust :focus-visible,.expect :focus-visible{outline-color:#fff;}
+
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0;}
+.skip-link{position:fixed;top:-60px;left:16px;z-index:1001;background:var(--clay);color:#fff;padding:10px 18px;border-radius:6px;font-size:13px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:top .15s ease;}
+.skip-link:focus{top:12px;}
+
+/* ---------- shared primitives ---------- */
+.shell{width:100%;padding-inline:var(--gutter);}
+
+.eyebrow{display:flex;align-items:center;gap:14px;}
+.eyebrow__rule{width:46px;height:1.33px;background:var(--cocoa);flex:0 0 46px;}
+.eyebrow__text{font-family:var(--font-eyebrow);font-size:14px;font-weight:600;letter-spacing:2.8px;color:var(--cocoa);line-height:1.2;}
+.eyebrow--light .eyebrow__rule{background:var(--pale-sand);}
+.eyebrow--light .eyebrow__text{color:var(--pale-sand);}
+
+.clip{overflow:hidden;display:block;padding-bottom:4px;margin-bottom:-4px;}
+.section-head{display:flex;flex-direction:column;gap:22px;}
+.section-title{font-family:var(--font-heading);font-size:clamp(26px, 2.917vw, 42px);font-weight:400;line-height:1.2;color:var(--text-primary);max-width:820px;}
+.section-title--inv{color:#fff;}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;padding:4px;border-radius:6px;background:var(--clay);
+  box-shadow:var(--shadow-btn);position:relative;
+}
+.btn__inner{
+  position:relative;display:flex;align-items:center;justify-content:center;
+  width:100%;border-radius:4px;border:1px solid rgba(255,255,255,.5);
+  overflow:hidden;padding:12px 30px;
+}
+.btn__wipe{position:absolute;inset:0;background:#fff;transform:scaleX(0);transform-origin:100% center;pointer-events:none;}
+.btn__label{
+  position:relative;z-index:1;font-family:var(--font-body);font-size:12px;font-weight:700;
+  letter-spacing:1.2px;color:#fff;white-space:nowrap;text-transform:uppercase;
+}
+.btn--block{display:flex;width:100%;}
+.btn--ghost{background:transparent;box-shadow:none;}
+.btn--ghost .btn__inner{border-color:rgba(255,255,255,.4);}
+.btn--ghost .btn__wipe{background:#fff;}
+.btn--white{background:#fff;}
+.btn--white .btn__inner{border-color:rgba(146,109,92,.5);}
+.btn--white .btn__label{color:var(--clay);}
+.btn--white .btn__wipe{background:var(--clay);}
+.btn--fixed .btn__inner{padding:12px 16px;}
+
+/* ---------- header (floating glass bar, from tmj.html) ---------- */
+.site-header{
+  position:fixed;top:16px;left:0;right:0;z-index:1000;padding:0 16px;
+  transition:top .3s cubic-bezier(.33,1,.68,1);
+}
+.header-inner{
+  display:flex;align-items:center;justify-content:space-between;
+  max-width:1200px;margin:0 auto;padding:0 12px 0 20px;height:64px;
+  background:rgba(255,255,255,.85);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,.3);border-radius:16px;
+  box-shadow:0 4px 6px -1px rgba(0,0,0,.08), 0 2px 4px -1px rgba(0,0,0,.04);
+  transition:box-shadow .3s cubic-bezier(.33,1,.68,1), background .3s cubic-bezier(.33,1,.68,1);
+}
+.site-header.scrolled .header-inner{
+  background:rgba(255,255,255,.95);
+  box-shadow:0 10px 15px -3px rgba(0,0,0,.08), 0 4px 6px -2px rgba(0,0,0,.04);
+}
+.header-logo{display:inline-flex;align-items:center;transition:transform .15s ease;}
+.header-logo img{height:22px;width:auto;display:block;}
+.header-nav{display:flex;align-items:center;gap:4px;}
+.header-nav a{
+  font-family:var(--font-body);font-weight:400;font-size:15px;color:var(--text-primary);
+  padding:10px 14px;border-radius:8px;
+  transition:color .15s ease, background .15s ease;
+}
+.header-nav a.btn{margin-left:8px;padding:4px;}
+.header-nav .btn .btn__inner{padding:12px 22px;}
+
+/* ---------- hero ---------- */
+/* The hero is always exactly one screen tall. Content is bottom-anchored so
+   it keeps sitting inside the dark fade, exactly as the 1440 reference does. */
+.hero{
+  position:relative;display:flex;flex-direction:column;justify-content:flex-end;
+  min-height:100vh;
+  min-height:100svh;
+  padding:clamp(140px, 27.4vh, 246px) 0 clamp(64px, 10.7vh, 96px);
+  padding:clamp(140px, 27.4svh, 246px) 0 clamp(64px, 10.7svh, 96px);
+  overflow:hidden;background:var(--overlay-warm);
+}
+.hero__media{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.05);will-change:transform;background:var(--overlay-warm) url('images/botox-hero-poster-1920.jpg') center/cover no-repeat;}
+.hero__wash{position:absolute;inset:0;background:rgba(31,12,4,.28);}
+.hero__scrim{position:absolute;inset:0;background:linear-gradient(355deg, rgba(31,12,4,.9) 0%, rgba(31,12,4,0) 100%);}
+.hero__fade{position:absolute;left:0;right:0;bottom:0;height:clamp(180px, 31.2svh, 280px);background:linear-gradient(0deg, #3D2C20 0%, rgba(61,44,32,0) 100%);}
+.hero__top{position:relative;z-index:2;display:flex;align-items:flex-start;justify-content:space-between;gap:40px;padding-inline:var(--gutter);}
+
+.hero__type{flex:0 1 840px;max-width:840px;display:flex;flex-direction:column;gap:clamp(16px, 1.806vw, 26px);}
+/* min(vw, svh) so the headline also yields on short/landscape screens */
+.hero__headline{font-family:var(--font-heading);font-size:clamp(34px, 6.12vw, 88px);font-size:clamp(34px, min(6.12vw, 11svh), 88px);font-weight:400;line-height:1.06;letter-spacing:-.034em;color:#fff;}
+.hero__sub{font-family:var(--font-body);font-size:clamp(16px, 1.389vw, 20px);line-height:1.5;color:var(--text-inverse-muted);max-width:600px;}
+.hero__offer{display:flex;align-items:flex-start;gap:clamp(14px, 1.389vw, 20px);flex-wrap:wrap;}
+.hero__price{font-family:var(--font-heading);font-size:clamp(44px, 5vw, 72px);font-size:clamp(44px, min(5vw, 9svh), 72px);line-height:1;letter-spacing:-.042em;color:var(--gold);}
+.hero__offer-cap{padding-top:clamp(24px, 3.264vw, 47px);font-size:clamp(11px, .903vw, 13px);font-weight:500;letter-spacing:.2em;color:#fff;}
+.hero__buttons{display:flex;gap:16px;flex-wrap:wrap;}
+.hero__buttons .btn{height:46px;}
+.hero__buttons .btn__inner{padding:0 30px;}
+
+/* hero booking card */
+/* booking card: relocated below the hero from 1200px down (see initHeroBooking) */
+.hero-booking{display:none;background:var(--trust-bg);padding:clamp(24px, 4svh, 40px) var(--gutter) 0;}
+.hero-booking.is-filled{display:block;}
+.hero-booking .hero__cardwrap{display:block;width:100%;max-width:520px;margin:0 auto;overflow:visible;}
+.hero-booking .hero__card{width:100%;max-width:none;margin-top:0;}
+.hero__card{
+  flex:0 0 360px;width:360px;margin-top:16px;background:#fff;border-radius:16px;padding:28px;
+  display:flex;flex-direction:column;gap:14px;
+  box-shadow:0 10px 24px -4px rgba(31,12,4,.25), 0 4px 6px -2px rgba(31,12,4,.1);
+}
+.hero__card h2{font-family:var(--font-heading);font-size:clamp(21px, 1.667vw, 24px);font-weight:400;letter-spacing:2px;color:var(--black);}
+.hero__card p{font-size:13px;line-height:1.5;color:var(--text-tertiary);}
+.hcard__row{display:flex;gap:10px;}
+.field{
+  position:relative;display:flex;align-items:center;width:100%;height:44px;background:var(--warm-white);
+  border:1px solid var(--border-default);border-radius:6px;padding:0 14px;
+}
+.field input,.field select,.field textarea{
+  width:100%;height:100%;border:0;background:transparent;outline:none;
+  font-family:var(--font-body);font-size:14px;color:var(--black);
+  appearance:none;-webkit-appearance:none;
+}
+.field textarea{resize:none;padding:0;line-height:1.5;}
+.field input::placeholder,.field textarea::placeholder{color:var(--text-tertiary);opacity:1;}
+.field select{color:var(--text-tertiary);cursor:pointer;}
+.field select.has-value{color:var(--black);}
+.field__chev{position:absolute;right:14px;top:50%;margin-top:-3px;width:12px;height:7px;pointer-events:none;}
+.field__chev path{fill:none;stroke:var(--text-tertiary);stroke-width:1.2;stroke-linecap:round;stroke-linejoin:round;}
+.consent{display:flex;align-items:center;gap:10px;}
+.consent input{width:14px;height:14px;flex:0 0 14px;margin:0;accent-color:var(--clay);border-radius:4px;}
+.consent span{font-size:12px;line-height:1.5;color:var(--text-tertiary);}
+
+/* ---------- trust strip ---------- */
+.trust{background:var(--trust-bg);padding:clamp(44px, 8vh, 72px) var(--gutter);padding-block:clamp(44px, 8svh, 72px);display:flex;flex-direction:column;gap:clamp(32px, 5.78svh, 52px);}
+.trust__row{display:flex;width:100%;}
+.trust__item{flex:1 1 0;display:flex;flex-direction:column;gap:14px;padding:0 40px;}
+.trust__item:first-of-type{padding-left:0;}
+.trust__value{font-family:var(--font-heading);font-size:clamp(28px, 2.778vw, 40px);line-height:1.1;color:var(--gold);}
+.trust__cap{font-size:12px;font-weight:500;letter-spacing:2.4px;line-height:1.5;color:var(--text-inverse-muted);}
+.trust__div{width:1px;flex:0 0 1px;height:clamp(72px, 10.7svh, 96px);background:rgba(255,255,255,.2);}
+
+/* ---------- results carousel ---------- */
+.results{background:var(--greige);padding:var(--section-y) 0;display:flex;flex-direction:column;gap:clamp(32px, 6.23svh, 56px);}
+.results__head{padding-inline:var(--gutter);}
+/* Slide geometry is a percentage of the carousel height, so the whole
+   component scales with the viewport instead of with hard-coded pixels.
+   680 / 520 / 600 / 420 at the 1440 reference == 100 / 76.5 / 88.2 / 80.8 %. */
+.carousel{position:relative;width:100%;height:var(--car-h);overflow:hidden;}
+.carousel__stage{position:absolute;inset:0;}
+.slide{
+  position:absolute;top:11.8%;left:50%;height:76.5%;width:auto;aspect-ratio:1/1;
+  translate:-50% 0;
+  border-radius:24px;overflow:hidden;background:var(--greige-deep);
+  filter:blur(5px);opacity:.85;
+  transition:transform .6s cubic-bezier(.16,1,.3,1), height .6s cubic-bezier(.16,1,.3,1), top .6s cubic-bezier(.16,1,.3,1), filter .45s ease, opacity .45s ease, box-shadow .45s ease;
+  will-change:transform;
+}
+.slide img{width:100%;height:100%;object-fit:cover;}
+.slide.is-prev{transform:translateX(-80.8%);}
+.slide.is-next{transform:translateX(80.8%);}
+.slide.is-hidden{opacity:0;pointer-events:none;transform:scale(.9);}
+.slide.is-active{
+  top:5.9%;height:88.2%;transform:translateX(0);
+  filter:blur(0);opacity:1;box-shadow:0 18px 48px rgba(31,12,4,.18);z-index:3;
+}
+.carousel__btn{
+  position:absolute;top:50%;margin-top:-24px;width:48px;height:48px;z-index:5;
+  background:#fff;border-radius:4px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 2px 10px rgba(31,12,4,.2);transition:transform .3s ease, box-shadow .3s ease;
+}
+.carousel__btn svg{width:20px;height:20px;fill:none;stroke:var(--clay);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;}
+.carousel__btn--prev{left:calc(50% - (var(--car-h) * .441) + 20px);}
+.carousel__btn--next{left:calc(50% + (var(--car-h) * .441) - 68px);}
+.carousel__foot{display:flex;flex-direction:column;align-items:center;gap:20px;padding-inline:var(--gutter);}
+.dots{display:flex;align-items:center;gap:10px;height:8px;}
+.dot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.14);transition:background .3s ease, transform .3s ease;}
+.dot.is-on{background:var(--clay);transform:scale(1.15);}
+.carousel__foot .btn{width:320px;height:50px;}
+.carousel__foot .btn__inner{padding:0;}
+.disclaimer{font-size:14px;line-height:1.5;font-style:italic;color:var(--text-tertiary);text-align:center;}
+
+/* ---------- areas ---------- */
+.areas{background:#fff;padding:var(--section-y) 0;display:flex;flex-direction:column;gap:clamp(32px, 6.23svh, 56px);}
+.areas__head{padding-inline:var(--gutter);display:flex;flex-direction:column;gap:24px;}
+.areas__lead{font-size:18px;line-height:1.5;color:var(--text-secondary);max-width:700px;}
+.areas__strip{display:flex;gap:16px;height:clamp(340px, 53.4vh, 480px);height:clamp(340px, 53.4svh, 480px);padding-inline:var(--gutter);}
+.area{
+  position:relative;flex:180 1 0;min-width:0;height:100%;border-radius:16px;overflow:hidden;
+  transition:flex-grow .5s cubic-bezier(.16,1,.3,1), box-shadow .5s cubic-bezier(.16,1,.3,1);
+  cursor:pointer;
+}
+.area.is-open{flex-grow:300;box-shadow:0 16px 40px rgba(31,12,4,.25);}
+.area__img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.area.is-open .area__img{transform:scale(1.03);}
+.area__scrim{position:absolute;inset:0;background:linear-gradient(355deg, rgba(31,12,4,.85) 0%, rgba(31,12,4,0) 100%);}
+.area__cap{position:absolute;left:24px;right:24px;bottom:28px;display:flex;flex-direction:column;gap:8px;}
+.area__title{font-family:var(--font-heading);font-size:clamp(19px, 1.667vw, 24px);font-weight:400;letter-spacing:2px;line-height:1.25;color:#fff;}
+.area__note{
+  font-size:12px;line-height:1.5;color:var(--text-inverse-muted);
+  opacity:0;max-height:0;overflow:hidden;transition:opacity .4s ease, max-height .5s cubic-bezier(.16,1,.3,1);
+}
+.area.is-open .area__note{opacity:1;max-height:60px;}
+.areas__cta{display:flex;flex-direction:column;align-items:center;gap:16px;padding-inline:var(--gutter);}
+.areas__cta .btn{width:340px;height:50px;}
+.areas__cta .btn__inner{padding:0;}
+.areas__cta p{font-size:15px;line-height:1.5;color:var(--text-secondary);text-align:center;}
+
+/* ---------- what to expect ---------- */
+.expect{position:relative;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:var(--overlay-warm);
+  min-height:clamp(600px, 82vh, 860px);min-height:clamp(600px, 82svh, 860px);
+  padding:clamp(88px, 17.8vh, 160px) 0 clamp(32px, 4.4vh, 40px);
+  padding:clamp(88px, 17.8svh, 160px) 0 clamp(32px, 4.4svh, 40px);}
+.expect__media{position:absolute;inset:0;background:url('images/dysport-treatment-wide-3839px.webp') center/cover no-repeat;will-change:transform;}
+.expect__wash{position:absolute;inset:0;background:rgba(31,12,4,.45);}
+.expect__scrim{position:absolute;inset:0;background:linear-gradient(355deg, rgba(31,12,4,.85) 0%, rgba(31,12,4,.2) 100%);}
+.expect__inner{position:relative;z-index:2;padding-inline:var(--gutter);display:flex;flex-direction:column;}
+.expect__steps{display:flex;gap:16px;margin-top:clamp(36px, 7.8svh, 70px);}
+.step{
+  flex:1 1 0;min-height:clamp(240px, 33.4svh, 300px);padding:clamp(24px, 2.223vw, 32px);display:flex;flex-direction:column;gap:18px;
+  background:rgba(57,46,38,.6);border:1px solid rgba(255,255,255,.1);
+  -webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px);
+  transition:background .3s ease, border-color .3s ease, transform .3s ease;
+}
+.step__tag{font-size:12px;font-weight:500;letter-spacing:2.4px;color:var(--pale-sand);transition:color .3s ease;}
+.step__title{font-family:var(--font-heading);font-size:clamp(24px, 2.223vw, 32px);font-weight:400;letter-spacing:2px;line-height:1.2;color:#fff;}
+.step__body{font-size:15px;line-height:1.6;color:var(--text-inverse-muted);transition:color .3s ease;}
+.expect__cta{display:flex;justify-content:center;margin-top:30px;}
+.expect__cta .btn{width:300px;height:50px;}
+.expect__cta .btn__inner{padding:0;}
+
+/* ---------- formula compare + offer rail ---------- */
+.formula{background:#fff;padding-inline:var(--gutter);}
+.formula__inner{display:flex;width:100%;}
+.formula__content{flex:880 1 0;min-width:0;padding:clamp(48px, 8.89vh, 80px) clamp(24px, 2.778vw, 40px) clamp(48px, 8.89vh, 80px) 0;padding-block:clamp(48px, 8.89svh, 80px);border-right:1px solid var(--border-default);display:flex;flex-direction:column;}
+.formula__content h2{font-family:var(--font-heading);font-size:clamp(26px, 2.917vw, 42px);font-weight:400;line-height:1.2;color:var(--black);margin:22px 0 14px;}
+.formula__sub{font-size:16px;line-height:1.625;color:var(--text-secondary);max-width:640px;}
+.compare{display:flex;gap:20px;padding-top:32px;}
+.compare__col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;}
+.compare__title{font-family:var(--font-heading);font-size:clamp(20px, 1.667vw, 24px);font-weight:400;letter-spacing:2px;line-height:1.2;color:var(--black);}
+.compare__cap{font-size:14px;line-height:1.5;color:var(--text-secondary);padding:8px 0 10px;}
+.compare__row{border-top:1px solid var(--border-default);padding:14px 0;display:flex;flex-direction:column;gap:5px;}
+.compare__label{font-size:11px;font-weight:600;letter-spacing:1.8px;color:var(--text-tertiary);}
+.compare__value{font-size:15px;line-height:1.5;color:var(--black);}
+.formula__note{font-size:14px;line-height:1.625;color:var(--text-secondary);padding-top:24px;}
+
+.rail{flex:400 1 0;min-width:0;padding:clamp(48px, 8.89vh, 80px) 0 clamp(48px, 8.89vh, 80px) clamp(24px, 2.778vw, 40px);padding-block:clamp(48px, 8.89svh, 80px);display:flex;flex-direction:column;gap:24px;}
+.price-card{background:var(--greige);border-radius:16px;padding:clamp(24px, 2.223vw, 32px);display:flex;flex-direction:column;}
+.price-card__label{font-size:12px;font-weight:500;letter-spacing:2.4px;color:var(--clay);}
+.price-card__price{font-family:var(--font-heading);font-size:clamp(52px, 6.12vw, 88px);line-height:1;letter-spacing:-.057em;color:var(--clay);padding-top:10px;}
+.price-card__unit{font-size:15px;color:var(--text-secondary);padding-top:8px;}
+.price-card__rule{height:1px;background:var(--border-default);margin:22px 0;}
+.price-card__ex-label{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--text-tertiary);}
+.price-card__ex{padding-top:8px;display:flex;flex-direction:column;gap:4px;}
+.price-card__ex p{font-size:14px;line-height:1.625;color:var(--text-secondary);}
+.price-card__ex p.strong{color:var(--black);font-weight:500;}
+.price-card__fin{font-size:13px;line-height:1.5;color:var(--text-tertiary);padding:16px 0 22px;}
+.price-card .btn{height:46px;}
+.price-card .btn__inner{padding:0;}
+.price-card__exp{font-size:11px;font-weight:500;letter-spacing:1.6px;color:var(--text-tertiary);text-align:center;padding-top:14px;}
+.rail__aside{display:flex;flex-direction:column;gap:10px;}
+.rail__aside b{font-size:11px;font-weight:600;letter-spacing:2px;color:var(--clay);}
+.rail__aside p{font-size:13px;line-height:1.625;color:var(--text-secondary);}
+
+/* ---------- CTA bands ---------- */
+.band{position:relative;padding:var(--band-y) var(--gutter);}
+.band--clay{
+  background:var(--clay) url('images/dysport-injection-reclined-patient.jpg') center 38%/cover no-repeat;
+  overflow:hidden;
+}
+.band--clay::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(90deg,
+    rgba(146,109,92,.96) 0%,
+    rgba(146,109,92,.92) 40%,
+    rgba(125,92,76,.85) 74%,
+    rgba(125,92,76,.82) 100%);
+}
+.band__inner{position:relative;z-index:1;}
+.band--cocoa{background:var(--cocoa);}
+.band__inner{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;}
+.band__copy{flex:0 1 820px;max-width:820px;display:flex;flex-direction:column;gap:12px;}
+.band__copy h2{font-family:var(--font-heading);font-size:clamp(26px, 2.778vw, 40px);font-weight:400;line-height:1.2;color:#fff;}
+.band__copy p{font-size:16px;line-height:1.625;color:#fff;}
+.band__action{flex:0 0 250px;width:250px;padding-top:24px;}
+.band__action .btn{height:50px;}
+.band__action .btn__inner{padding:0;}
+.band__note{display:block;text-align:center;font-size:11px;font-weight:500;letter-spacing:1.6px;color:rgba(255,255,255,.85);padding-top:12px;}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--greige);padding:var(--section-y) var(--gutter);display:flex;flex-direction:column;}
+.reviews__head{display:flex;justify-content:space-between;align-items:flex-start;gap:40px;}
+.reviews__headblock{flex:800 1 0;min-width:0;display:flex;flex-direction:column;gap:22px;}
+.reviews__title{font-family:var(--font-heading);font-size:clamp(28px, 3.34vw, 48px);font-weight:400;line-height:1.2;letter-spacing:-.6px;color:var(--text-primary);}
+.rating{flex:0 0 auto;display:flex;gap:20px;padding-top:14px;}
+.rating__value{font-family:var(--font-heading);font-size:clamp(46px, 5vw, 72px);line-height:1;letter-spacing:-.056em;color:var(--gold);}
+.rating__meta{display:flex;flex-direction:column;gap:10px;padding-top:16px;}
+.rating__cap{font-size:12px;font-weight:500;letter-spacing:2.4px;line-height:1.5;color:var(--text-tertiary);white-space:nowrap;}
+.stars{display:flex;gap:6px;align-items:center;height:10px;}
+.stars svg{width:10px;height:10px;fill:var(--clay);display:block;}
+.reviews__rows{padding-top:clamp(40px, 8svh, 72px);display:flex;flex-direction:column;}
+.review-row{display:flex;gap:48px;align-items:flex-start;min-height:200px;}
+.review{flex:362 1 0;min-width:0;display:flex;flex-direction:column;}
+.review__quote{font-family:var(--font-heading);font-size:clamp(18px, 1.528vw, 22px);font-weight:400;line-height:1.35;color:var(--text-primary);padding-top:20px;}
+.review__name{font-size:14px;font-weight:500;letter-spacing:.4px;line-height:1.5;color:var(--text-secondary);padding-top:18px;}
+.review__seam{width:1px;flex:0 0 1px;height:200px;background:var(--border-default);}
+.reviews__mid{padding:48px 0;}
+.reviews__mid hr{border:0;height:1px;background:var(--border-default);margin:0;}
+
+/* ---------- providers + clinic ---------- */
+.providers{background:#fff;padding:var(--section-y-sm) var(--gutter);}
+.providers__inner{display:flex;gap:40px;}
+.providers__col{flex:760 1 0;min-width:0;display:flex;flex-direction:column;}
+.providers__col h2{font-family:var(--font-heading);font-size:clamp(26px, 2.917vw, 42px);font-weight:400;line-height:1.2;color:var(--black);margin:22px 0 14px;}
+.providers__sub{font-size:16px;line-height:1.625;color:var(--text-secondary);max-width:620px;}
+.provider{display:flex;gap:24px;border-top:1px solid var(--border-default);padding-top:36px;margin-top:0;}
+.provider__portrait{flex:0 0 170px;width:170px;aspect-ratio:170/214;border-radius:16px;overflow:hidden;background:var(--greige);}
+.provider__portrait img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.provider__copy{flex:1 1 auto;min-width:0;display:flex;flex-direction:column;}
+.provider__name{font-family:var(--font-heading);font-size:clamp(21px, 1.806vw, 26px);font-weight:400;letter-spacing:2px;line-height:1.2;color:var(--black);}
+.provider__cred{font-size:12px;font-weight:600;letter-spacing:1.8px;color:var(--clay);padding:10px 0 14px;}
+.provider__bio{font-size:14px;line-height:1.625;color:var(--text-secondary);}
+.cred-strip{display:flex;justify-content:space-between;gap:24px;border-top:1px solid var(--border-default);padding-top:32px;margin-top:0;flex-wrap:wrap;}
+.cred-strip span{font-size:12px;font-weight:600;letter-spacing:1.8px;color:var(--text-tertiary);}
+.clinic{flex:480 1 0;min-width:0;display:flex;flex-direction:column;gap:20px;}
+.clinic__photo{width:100%;border-radius:16px;overflow:hidden;background:var(--greige);}
+.clinic__photo--1{height:clamp(220px, 37.8vh, 340px);height:clamp(220px, 37.8svh, 340px);}
+.clinic__photo--2{height:clamp(180px, 28.9vh, 260px);height:clamp(180px, 28.9svh, 260px);}
+.clinic__photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;}
+.clinic__cap{display:flex;flex-direction:column;gap:8px;padding-top:4px;}
+.clinic__cap b{font-size:12px;font-weight:600;letter-spacing:1.8px;color:var(--clay);}
+.clinic__cap p{font-size:14px;line-height:1.625;color:var(--text-secondary);}
+
+/* ---------- safety ---------- */
+.safety{background:var(--greige);padding:var(--section-y-sm) var(--gutter);}
+.safety__head{display:flex;justify-content:space-between;gap:40px;align-items:flex-start;}
+.safety__left{flex:760 1 0;min-width:0;}
+.safety__left h2{font-family:var(--font-heading);font-size:clamp(26px, 2.917vw, 42px);font-weight:400;line-height:1.2;color:var(--black);margin-top:22px;}
+.safety__right{flex:480 1 0;min-width:0;padding-top:30px;}
+.safety__right p{font-size:16px;line-height:1.625;color:var(--text-secondary);}
+.safety__cols{display:flex;gap:40px;border-top:1px solid var(--border-default);padding-top:clamp(28px, 5.34svh, 48px);margin-top:0;}
+.safety__col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;}
+.safety__accent{width:46px;height:2px;background:var(--clay);}
+.safety__label{font-size:12px;font-weight:600;letter-spacing:2px;color:var(--cocoa);}
+.safety__items{padding-top:16px;}
+.safety__item{border-top:1px solid rgba(0,0,0,.15);padding:18px 0;}
+.safety__item p{font-size:15px;line-height:1.625;color:var(--black);}
+.panel{background:#fff;border-radius:24px;padding:clamp(26px, 2.778vw, 40px);margin-top:clamp(28px, 5.34svh, 48px);box-shadow:0 2px 8px rgba(31,12,4,.08);}
+.panel__top{display:flex;gap:40px;}
+.panel__left{flex:360 1 0;min-width:0;display:flex;flex-direction:column;gap:12px;}
+.panel__left h3{font-family:var(--font-heading);font-size:clamp(21px, 1.806vw, 26px);font-weight:400;letter-spacing:2px;line-height:1.2;color:var(--black);}
+.panel__left p{font-size:14px;line-height:1.625;color:var(--text-secondary);}
+.panel__right{flex:800 1 0;min-width:0;display:flex;gap:40px;}
+.contra-col{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px;}
+.contra{display:flex;gap:12px;}
+.contra__dash{flex:0 0 12px;width:12px;height:1.5px;background:var(--clay);margin-top:11px;}
+.contra p{font-size:14px;line-height:1.625;color:var(--black);max-width:356px;}
+.panel__bottom{display:flex;gap:24px;border-top:1px solid var(--border-default);padding-top:32px;margin-top:0;}
+.panel__bottom b{flex:0 0 auto;font-size:12px;font-weight:600;letter-spacing:2px;color:var(--clay);padding-top:2px;}
+.panel__bottom p{font-size:14px;line-height:1.625;color:var(--text-secondary);}
+
+/* ---------- form + location ---------- */
+.contact{background:#fff;padding:var(--section-y-sm) var(--gutter);}
+.contact__inner{display:flex;gap:40px;}
+.formcol{flex:620 1 0;min-width:0;display:flex;flex-direction:column;}
+.formcol h2{font-family:var(--font-heading);font-size:clamp(26px, 2.917vw, 42px);font-weight:400;line-height:1.2;color:var(--black);margin:22px 0 12px;}
+.formcol__sub{font-size:16px;line-height:1.625;color:var(--text-secondary);}
+.fields{padding-top:28px;display:flex;flex-direction:column;gap:14px;}
+.fields .field{height:48px;padding:0 16px;}
+.fields .field input,.fields .field select,.fields .field textarea{font-size:15px;}
+.fields .field--area{height:108px;align-items:flex-start;padding:14px 16px;}
+.fields .consent{padding:4px 0;gap:12px;}
+.fields .consent input{width:16px;height:16px;flex:0 0 16px;}
+.fields .consent span{font-size:14px;color:var(--text-secondary);}
+.fields .btn{height:52px;}
+.fields .btn__inner{padding:0;}
+.fields .btn__label{font-size:13px;}
+.form-note{font-size:12px;line-height:1.5;color:var(--text-tertiary);}
+.reassure{padding-top:28px;display:flex;flex-direction:column;gap:14px;}
+.reassure__item{display:flex;gap:12px;align-items:flex-start;}
+.reassure__item svg{flex:0 0 18px;width:18px;height:18px;fill:none;stroke:var(--clay);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;}
+.reassure__item span{font-size:14px;font-weight:500;color:var(--black);}
+.loccol{flex:620 1 0;min-width:0;display:flex;flex-direction:column;}
+.loccol__label{font-size:12px;font-weight:600;letter-spacing:2px;color:var(--clay);}
+.loccol__addr{padding-top:16px;display:flex;flex-direction:column;gap:6px;}
+.loccol__addr h3{font-family:var(--font-heading);font-size:clamp(22px, 1.945vw, 28px);font-weight:400;letter-spacing:2px;line-height:1.2;color:var(--black);}
+.loccol__addr p{font-size:16px;color:var(--text-secondary);}
+.detail-rows{padding-top:26px;}
+.detail{display:flex;gap:16px;border-top:1px solid var(--border-default);padding:16px 0;}
+.detail__label{flex:0 0 110px;width:110px;font-size:11px;font-weight:600;letter-spacing:1.8px;color:var(--text-tertiary);padding-top:3px;}
+.detail__value{flex:1 1 auto;min-width:0;font-size:15px;line-height:1.5;color:var(--black);}
+.detail__value a{transition:color .15s ease;}
+.map-wrap{padding-top:32px;display:flex;flex-direction:column;gap:12px;}
+.map{display:block;width:100%;height:clamp(240px, 36.7vh, 360px);height:clamp(240px, 36.7svh, 360px);border:0;border-radius:16px;background:var(--warm-white);}
+.map__link{
+  align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;
+  color:var(--clay);border-bottom:1px solid rgba(146,109,92,.35);padding-bottom:2px;
+  transition:color .15s ease, border-color .15s ease;
+}
+.map__cap{font-size:13px;line-height:1.625;color:var(--text-tertiary);}
+
+/* ---------- FAQ ---------- */
+.faq{background:var(--greige);padding:var(--section-y) var(--gutter);display:flex;flex-direction:column;gap:clamp(32px, 6.23svh, 56px);}
+.faq__list{display:flex;flex-direction:column;border-top:1px solid var(--border-default);}
+.faq__row{border-bottom:1px solid var(--border-default);}
+.faq__head{display:flex;width:100%;gap:clamp(24px, 4.2vw, 60px);padding:clamp(24px, 4svh, 36px) 0;text-align:left;align-items:flex-start;}
+.faq__qcol{flex:460 1 0;min-width:0;display:flex;justify-content:space-between;gap:20px;align-items:flex-start;}
+.faq__q{font-family:var(--font-heading);font-size:clamp(20px, 1.806vw, 26px);font-weight:400;letter-spacing:.077em;line-height:1.25;color:var(--text-primary);max-width:380px;transition:color .15s ease;}
+.faq__toggle{font-size:20px;line-height:1.65;color:var(--text-tertiary);flex:0 0 auto;transition:color .15s ease;}
+.faq__acol{flex:760 1 0;min-width:0;overflow:hidden;}
+.js-on .faq__head[aria-expanded="false"] .faq__acol{height:0;}
+.faq__a{font-size:16px;line-height:1.625;color:var(--text-secondary);}
+
+/* ---------- footer (from tmj.html) ---------- */
+.site-footer{background:var(--black);color:var(--white);padding:var(--section-y-sm) 0 clamp(28px, 4.45svh, 40px);}
+.site-footer .container{width:100%;padding-inline:var(--gutter);}
+.footer-top{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;margin-bottom:clamp(40px, 7.11svh, 64px);}
+.footer-brand img{height:76px;width:auto;margin-bottom:24px;filter:brightness(0) invert(1);}
+.footer-brand p{font-family:var(--font-body);font-size:15px;line-height:1.6;color:var(--text-inverse-muted);max-width:320px;}
+.footer-col h5{font-family:var(--font-body);font-size:14px;font-weight:600;text-transform:uppercase;letter-spacing:2.8px;color:var(--white);margin-bottom:24px;}
+.footer-col ul{list-style:none;}
+.footer-col li{margin-bottom:12px;}
+.footer-col a{
+  font-family:var(--font-body);font-size:15px;color:var(--text-inverse-muted);display:inline-block;
+  transition:color .15s ease, transform .15s cubic-bezier(.33,1,.68,1);
+}
+.footer-legal{
+  font-family:var(--font-body);font-size:13px;line-height:1.625;color:rgba(255,255,255,.45);
+  max-width:820px;margin-bottom:28px;
+}
+.footer-bottom{
+  border-top:1px solid var(--border-inverse);padding-top:28px;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.footer-bottom p{font-family:var(--font-body);font-size:13px;color:rgba(255,255,255,.5);}
+.footer-social{display:flex;gap:12px;}
+.footer-social a{
+  width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.08);
+  display:flex;align-items:center;justify-content:center;color:var(--text-inverse-muted);
+  transition:background .15s ease, color .15s ease, transform .15s cubic-bezier(.33,1,.68,1);
+}
+
+/* ---------- GSAP initial states (authored, not set in JS) ---------- */
+[data-hero-media]{transform:scale(1.05);}
+[data-hero-overlay]{opacity:0;}
+.js-on .site-header[data-hero-nav]{translate:0 -120%;}
+[data-clip-wrap]{overflow:hidden;display:block;}
+.js-on [data-hero-title-wrap],.js-on [data-hero-info-wrap],.js-on [data-hero-featured-wrap]{overflow:hidden;}
+.js-on [data-hero-title],.js-on [data-hero-info],.js-on [data-hero-featured]{transform:translateY(110%);}
+
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;}
+  [data-hero-media],[data-parallax]{transform:none !important;}
+  .js-on .site-header[data-hero-nav]{translate:0 0;}
+  .js-on [data-hero-title],.js-on [data-hero-info],.js-on [data-hero-featured]{transform:none !important;}
+  .js-on [data-hero-featured]{opacity:1 !important;}
+  [data-hero-overlay]{opacity:1 !important;}
+}
+
+/* ===================================================================
+   RESPONSIVE
+   Desktop >= 1200px is the 1:1 reference rendering. Vertical sizing lives
+   in the viewport-relative tokens above, so the breakpoints below only
+   handle flow and layout - they never re-state a height in pixels.
+   =================================================================== */
+
+/* ---------- pointer-aware interaction layer ----------
+   Real hover states are served only to devices that can actually hover.
+   Touch devices get the identical states, driven by a tap (see initTapStates). */
+@media (hover:hover) and (pointer:fine){
+  .header-inner:hover{box-shadow:0 10px 15px -3px rgba(0,0,0,.08), 0 4px 6px -2px rgba(0,0,0,.04);}
+  .header-logo:hover{transform:scale(1.02);}
+  .header-nav a:not(.btn):hover{color:var(--clay);background:rgba(146,109,92,.06);}
+  .carousel__btn:hover{box-shadow:0 6px 18px rgba(31,12,4,.26);}
+  .step:hover{
+    background:linear-gradient(rgba(255,255,255,.15), rgba(255,255,255,.15)), rgba(57,46,38,.5);
+    border-color:rgba(255,255,255,.34);
+  }
+  .step:hover .step__tag{color:#E6D8C9;}
+  .step:hover .step__body{color:rgba(255,255,255,.92);}
+  .provider:hover .provider__portrait img{transform:scale(1.04);}
+  .clinic__photo:hover img{transform:scale(1.04);}
+  .faq__row:hover .faq__q{color:var(--clay-hover);}
+  .detail__value a:hover{color:var(--clay-hover);}
+  .map__link:hover{color:var(--clay-hover);border-color:var(--clay-hover);}
+  .footer-col a:hover{color:var(--white);transform:translateX(2px);}
+  .footer-social a:hover{background:var(--clay);color:var(--white);transform:translateY(-2px);}
+}
+
+@media (hover:none),(pointer:coarse){
+  .area,.step,.provider__portrait,.clinic__photo,.faq__head,.carousel__btn,.dot,.btn,
+  .header-nav a,.footer-col a,.footer-social a,.map__link{-webkit-tap-highlight-color:transparent;}
+
+  /* tap equivalents of the desktop hover states */
+  .step.is-tapped{
+    background:linear-gradient(rgba(255,255,255,.15), rgba(255,255,255,.15)), rgba(57,46,38,.5);
+    border-color:rgba(255,255,255,.34);
+  }
+  .step.is-tapped .step__tag{color:#E6D8C9;}
+  .step.is-tapped .step__body{color:rgba(255,255,255,.92);}
+  .provider__portrait.is-tapped img{transform:scale(1.04);}
+  .clinic__photo.is-tapped img{transform:scale(1.04);}
+  .faq__head[aria-expanded="true"] .faq__q{color:var(--clay-hover);}
+  .detail__value a:active,.map__link:active,.footer-col a:active{color:var(--clay-hover);}
+  .footer-social a:active{background:var(--clay);color:var(--white);}
+  .area.is-open{box-shadow:0 16px 40px rgba(31,12,4,.25);}
+
+  /* every control clears the 44px tap target */
+  .carousel__btn{width:52px;height:52px;margin-top:-26px;}
+  .dots{gap:14px;height:24px;}
+  .dot{width:10px;height:10px;}
+  .footer-social a{width:44px;height:44px;}
+  .consent input{width:20px;height:20px;flex:0 0 20px;}
+}
+
+/* ---------- <= 1200px : columns stack, booking card leaves the hero ---------- */
+@media (max-width:1200px){
+  /* every column that stacks must drop its desktop flex basis */
+  .band__copy,.band__action,
+  .providers__col,.clinic,.safety__left,.safety__right,.panel__left,.panel__right,
+  .formcol,.loccol,.formula__content,.rail,.reviews__headblock,.review{
+    flex:1 1 auto;max-width:none;width:auto;
+  }
+  .hero__cardwrap{overflow:visible;padding:0;margin:0;}
+  .js-on [data-hero-featured]{transform:translateY(30px);opacity:0;}
+
+  .hero{
+    padding:clamp(120px, 20vh, 200px) 0 clamp(48px, 7vh, 72px);
+    padding:clamp(120px, 20svh, 200px) 0 clamp(48px, 7svh, 72px);
+  }
+  /* tablet keeps the hero two-up - there is room beside the type */
+  .hero__top{gap:clamp(20px, 3vw, 40px);}
+  .hero__type{flex:1 1 0;min-width:0;max-width:720px;}
+  .hero__card{flex:1 1 auto;width:100%;margin-top:0;padding:24px;}
+
+  .formula__inner{flex-direction:column;}
+  .formula__content{padding:var(--section-y-sm) 0 clamp(28px, 4svh, 40px);border-right:0;border-bottom:1px solid var(--border-default);}
+  .rail{padding:clamp(28px, 4svh, 40px) 0 var(--section-y-sm);}
+
+  .providers__inner,.contact__inner,.safety__head,.safety__cols,.panel__top,.panel__right{flex-direction:column;}
+  .safety__right{padding-top:0;}
+  .safety__cols{gap:32px;}
+  .panel__top{gap:24px;}
+  .panel__right{gap:16px;}
+  .contra-col{gap:16px;}
+
+  .reviews__head{flex-direction:column;gap:32px;}
+  .rating{padding-top:0;}
+
+  .band__inner{flex-direction:column;align-items:stretch;}
+  .band__action{flex:1 1 auto;width:100%;max-width:300px;padding-top:8px;}
+
+  .footer-top{grid-template-columns:1fr 1fr;gap:40px;}
+
+  .expect__steps{flex-wrap:wrap;}
+  .step{flex:1 1 calc(50% - 8px);}
+}
+
+/* ---------- <= 900px : single column, carousel becomes one-up ---------- */
+@media (max-width:900px){
+  /* mobile re-tunes the vertical rhythm tokens rather than re-stating paddings */
+  :root{
+    --section-y:clamp(48px, 8.5vh, 72px);
+    --section-y:clamp(48px, 8.5svh, 72px);
+    --section-y-sm:clamp(44px, 8.5vh, 72px);
+    --section-y-sm:clamp(44px, 8.5svh, 72px);
+    --band-y:clamp(36px, 6vh, 56px);
+    --band-y:clamp(36px, 6svh, 56px);
+  }
+  .hero__wash{background:rgba(31,12,4,.5);}
+  .site-header{top:8px;padding:0 8px;}
+  .header-inner{height:56px;padding:0 8px 0 14px;}
+  .header-logo{flex:0 1 auto;min-width:0;}
+  .header-logo img{height:auto;width:auto;max-height:18px;max-width:100%;}
+  .header-nav{flex:0 0 auto;}
+  .header-nav a:not(.btn){display:none;}
+  .header-nav a.btn{margin-left:0;}
+  .header-nav .btn .btn__inner{padding:11px 16px;}
+  .header-nav .btn__label{line-height:1;}
+
+  .hero{
+    padding:clamp(100px, 16vh, 140px) 0 clamp(36px, 6vh, 56px);
+    padding:clamp(100px, 16svh, 140px) 0 clamp(36px, 6svh, 56px);
+  }
+  .hero__buttons{gap:12px;}
+  .hero__buttons .btn{flex:1 1 100%;}
+  .hero__buttons .btn__inner{padding:0 20px;}
+
+  .trust{gap:clamp(28px, 4svh, 40px);}
+  .trust__row{flex-wrap:wrap;gap:32px 0;}
+  .trust__item{flex:1 1 50%;padding:0 20px 0 0;}
+  .trust__div{display:none;}
+
+  .results,.areas,.faq{gap:clamp(28px, 4svh, 40px);}
+
+  .areas__strip{height:auto;flex-direction:column;gap:12px;}
+  .area{flex:1 1 auto;height:clamp(200px, 30svh, 280px);}
+  .area.is-open{flex-grow:1;}
+  .area__note{opacity:1;max-height:60px;}
+  .areas__cta .btn{width:100%;max-width:340px;}
+
+  .carousel{height:auto;padding-block:8px;}
+  .carousel__stage{position:relative;height:auto;}
+  .slide{
+    position:relative;top:0;left:0;translate:none;margin:0 auto;
+    width:min(100% - (2 * var(--gutter)), 420px);height:auto;aspect-ratio:1/1;
+    display:none;filter:none;opacity:1;transform:none !important;
+  }
+  .slide.is-active{display:block;top:0;height:auto;box-shadow:0 12px 32px rgba(31,12,4,.16);}
+  .carousel__btn{top:auto;bottom:-4px;margin-top:0;}
+  .carousel__btn--prev{left:var(--gutter);}
+  .carousel__btn--next{left:auto;right:var(--gutter);}
+  .carousel__foot{padding-top:16px;}
+  .carousel__foot .btn{width:100%;max-width:320px;}
+
+  .expect{min-height:0;padding:var(--section-y) 0;}
+  .expect__steps{flex-direction:column;margin-top:clamp(28px, 4svh, 40px);}
+  .step{flex:1 1 auto;padding:26px;min-height:0;}
+  .expect__cta .btn{width:100%;max-width:300px;}
+
+  .compare{flex-direction:column;gap:32px;}
+  .price-card{padding:26px;}
+
+  .review-row{flex-direction:column;gap:32px;}
+  .review__seam{display:none;}
+  .review{flex:1 1 auto;border-top:1px solid var(--border-default);padding-top:28px;}
+  .review-row .review:first-child{border-top:0;padding-top:0;}
+  .reviews__rows{padding-top:40px;}
+  .reviews__mid{padding:32px 0;}
+
+  .provider{flex-direction:column;gap:18px;}
+  .provider__portrait{width:140px;flex:0 0 auto;}
+  .cred-strip{gap:12px;}
+  .cred-strip span{flex:1 1 100%;}
+
+  .panel{padding:26px;border-radius:16px;}
+  .panel__bottom{flex-direction:column;gap:12px;}
+
+  .detail{flex-direction:column;gap:6px;}
+  .detail__label{width:auto;flex:1 1 auto;padding-top:0;}
+
+  .faq__head{flex-direction:column;gap:16px;padding:28px 0;}
+  .faq__qcol{flex:1 1 auto;}
+  .faq__q{letter-spacing:.045em;}
+  .faq__acol{flex:1 1 auto;}
+  .faq__a{font-size:15px;}
+
+  .site-footer{padding:var(--section-y) 0 32px;}
+  .footer-brand img{height:64px;}
+  .footer-top{grid-template-columns:1fr;gap:40px;margin-bottom:48px;}
+  .footer-bottom{flex-direction:column;align-items:flex-start;gap:16px;}
+}
+
+/* ---------- <= 640px : phone ---------- */
+@media (max-width:640px){
+  .hero__card{padding:22px;border-radius:12px;}
+  .hcard__row{flex-direction:column;gap:10px;}
+  .header-inner{gap:10px;}
+  .header-logo img{max-height:16px;}
+  .header-nav .btn .btn__inner{padding:11px 14px;}
+  .header-nav .btn__label{font-size:11px;letter-spacing:1px;}
+  .trust__item{flex:1 1 100%;padding-right:0;}
+  .eyebrow{gap:10px;}
+  .eyebrow__text{font-size:12px;letter-spacing:2px;}
+  .eyebrow__rule{width:30px;flex:0 0 30px;}
+  .rating{flex-wrap:wrap;gap:14px;}
+  .safety__cols{gap:24px;}
+  .panel{padding:22px;}
+  .cred-strip span{font-size:11px;letter-spacing:1.4px;}
+  .footer-brand img{height:56px;}
+  /* 16px inputs stop iOS Safari zooming the page on focus */
+  .field input,.field select,.field textarea,
+  .fields .field input,.fields .field select,.fields .field textarea{font-size:16px;}
+}
+
+/* ---------- <= 400px : small phone ---------- */
+@media (max-width:400px){
+  .header-logo img{max-height:14px;}
+  .header-nav .btn .btn__inner{padding:11px 12px;}
+  .header-nav .btn__label{font-size:10px;letter-spacing:.8px;}
+  .hero__offer{gap:12px;}
+  .hero__offer-cap{padding-top:0;padding-bottom:8px;align-self:flex-end;}
+  .btn__inner{padding:12px 18px;}
+  .btn__label{font-size:11px;letter-spacing:1px;}
+  .provider__portrait{width:120px;}
+  .reviews__rows{padding-top:32px;}
+  .detail__value{font-size:14px;}
+}
+
+/* ---------- the hero stacks only where there is vertical room for two blocks.
+   Wider or shorter than this and the card stays beside the type, so the hero
+   is always exactly one screen either way. ---------- */
+@media (max-width:1000px) and (min-height:800px){
+  .hero__top{flex-direction:column;align-items:stretch;gap:clamp(24px, 3.8svh, 48px);}
+  /* stacked tablet leads with the booking card, headline beneath it */
+  .hero__cardwrap{order:-1;}
+  .hero__type{flex:1 1 auto;max-width:720px;order:0;}
+  .hero__card{max-width:520px;padding:26px;}
+  .hero{
+    padding:clamp(100px, 15vh, 160px) 0 clamp(32px, 5vh, 64px);
+    padding:clamp(100px, 15svh, 160px) 0 clamp(32px, 5svh, 64px);
+  }
+}
+
+/* ---------- short viewports: the hero stays one screen, type gives way ---------- */
+@media (max-height:640px){
+  .hero__type{gap:10px;}
+  .hero__sub{font-size:15px;}
+  .hero__buttons{gap:10px;}
+  .hero__offer-cap{padding-top:clamp(14px, 2.6vw, 30px);}
+  .hero{padding-top:clamp(84px, 14svh, 120px);padding-bottom:clamp(24px, 5svh, 48px);}
+}
+@media (max-height:520px) and (orientation:landscape){
+  .hero__sub{display:none;}
+  .hero__buttons .btn{flex:0 1 auto;}
+}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  var d = document.documentElement;
+  d.className += ' js-on';
+  window.__ewReveal = function () { d.className = d.className.replace(/\bjs-on\b/g, ''); };
+  setTimeout(function () { if (!window.gsap) window.__ewReveal(); }, 2500);
+})();
+</script>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============================ HEADER (from tmj.html) ============================ -->
+<header class="site-header" id="siteHeader" data-hero-nav>
+  <div class="header-inner">
+    <a href="#main" class="header-logo" aria-label="Eternal Wellness Medical Spa Home">
+      <img src="images/eternal_logo.svg" alt="Eternal Wellness Medical Spa">
+    </a>
+    <nav class="header-nav" aria-label="Primary">
+      <a href="#results">Results</a>
+      <a href="#areas">Areas We Treat</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book" class="btn"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Book Consultation</span></span></a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============================ HERO ============================ -->
+<section class="hero" data-hero-animate>
+  <video class="hero__media" data-hero-media autoplay muted loop playsinline preload="auto"
+         poster="images/botox-hero-poster-1920.jpg" aria-hidden="true" tabindex="-1">
+    <source src="images/botox-hero-banner-1920x1080.webm" type="video/webm">
+    <source src="images/botox-hero-banner-1920x1080.mp4" type="video/mp4">
+  </video>
+  <div class="hero__wash"></div>
+  <div class="hero__scrim" data-hero-overlay></div>
+  <div class="hero__fade"></div>
+
+  <div class="hero__top">
+    <div class="hero__type">
+      <span class="clip" data-hero-info-wrap>
+        <span class="eyebrow eyebrow--light" data-hero-info>
+          <span class="eyebrow__rule"></span>
+          <span class="eyebrow__text">INJECTABLES · TRAVERSE CITY, MICHIGAN</span>
+        </span>
+      </span>
+
+      <span class="clip" data-hero-title-wrap>
+        <h1 class="hero__headline" data-hero-title>Never frozen. Just a rested, smoother face.</h1>
+      </span>
+
+      <span class="clip" data-hero-info-wrap>
+        <p class="hero__sub" data-hero-info>Board-certified medical oversight, a 10&ndash;30 minute visit and no downtime. Serving Traverse City and Northern Michigan since 2019.</p>
+      </span>
+
+      <span class="clip" data-hero-info-wrap>
+        <span class="hero__offer" data-hero-info>
+          <span class="hero__price">$9.99</span>
+          <span class="hero__offer-cap">PER UNIT · NEW CLIENTS · LIMITED TIME</span>
+        </span>
+      </span>
+
+      <span class="clip" data-hero-info-wrap>
+        <span class="hero__buttons" data-hero-info>
+          <a class="btn" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim $9.99 per unit</span></span></a>
+          <a class="btn btn--ghost" href="tel:+12312524474"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Call (231) 252-4474</span></span></a>
+        </span>
+      </span>
+    </div>
+
+    <div class="clip hero__cardwrap" data-hero-featured-wrap>
+      <form class="hero__card" data-hero-featured novalidate>
+        <h2>Book your consult</h2>
+        <p>Takes 30 seconds. We reply the same business day.</p>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">First name</span><input type="text" name="first" placeholder="First name" autocomplete="given-name"></label>
+          <label class="field"><span class="sr-only">Last name</span><input type="text" name="last" placeholder="Last name" autocomplete="family-name"></label>
+        </div>
+        <label class="field"><span class="sr-only">Phone</span><input type="tel" name="phone" placeholder="Phone" autocomplete="tel"></label>
+        <label class="field"><span class="sr-only">Email</span><input type="email" name="email" placeholder="Email" autocomplete="email"></label>
+        <label class="consent"><input type="checkbox" name="consent"><span>I agree to be contacted about my appointment.</span></label>
+        <button class="btn btn--block" type="submit"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim $9.99 per unit</span></span></button>
+      </form>
+    </div>
+  </div>
+
+</section>
+
+<!-- Booking card is moved in here from the hero at <=1200px, see initHeroBooking -->
+<section class="hero-booking" data-booking-slot aria-label="Book your consultation"></section>
+
+<!-- ============================ TRUST STRIP ============================ -->
+<section class="trust">
+  <div class="section-head">
+    <span class="clip" data-clip-wrap="tag">
+      <span class="eyebrow eyebrow--light">
+        <span class="eyebrow__rule"></span>
+        <span class="eyebrow__text">WHY ETERNAL WELLNESS</span>
+      </span>
+    </span>
+    <span class="clip" data-clip-wrap="title">
+      <h2 class="section-title section-title--inv">Why patients drive an hour for this.</h2>
+    </span>
+  </div>
+  <div class="trust__row">
+    <div class="trust__item">
+      <span class="trust__value" data-count>5.0</span>
+      <span class="trust__cap">RATING ON GOOGLE</span>
+    </div>
+    <span class="trust__div"></span>
+    <div class="trust__item">
+      <span class="trust__value">2019</span>
+      <span class="trust__cap">SERVING NORTHERN MICHIGAN</span>
+    </div>
+    <span class="trust__div"></span>
+    <div class="trust__item">
+      <span class="trust__value" data-count>15+</span>
+      <span class="trust__cap">YEARS CLINICAL EXPERIENCE</span>
+    </div>
+    <span class="trust__div"></span>
+    <div class="trust__item">
+      <span class="trust__value">MD</span>
+      <span class="trust__cap">BOARD-CERTIFIED OVERSIGHT</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ RESULTS ============================ -->
+<section class="results" id="results">
+  <div class="results__head section-head">
+    <span class="clip" data-clip-wrap="tag">
+      <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">REAL RESULTS</span></span>
+    </span>
+    <span class="clip" data-clip-wrap="title">
+      <h2 class="section-title">Three weeks apart. Same light, same angle.</h2>
+    </span>
+  </div>
+
+  <div class="carousel" data-carousel>
+    <div class="carousel__stage">
+      <figure class="slide"><img src="images/dysport-before-after-1-1080sq.webp" alt="Before and after Dysport treatment" loading="lazy" width="1080" height="1080"></figure>
+      <figure class="slide"><img src="images/botox-before-after-1-1080sq.webp" alt="Before and after Botox treatment, forehead and frown lines" loading="lazy" width="1080" height="1080"></figure>
+      <figure class="slide"><img src="images/botox-before-after-2-1080sq.webp" alt="Before and after Botox treatment, forehead lines" loading="lazy" width="1080" height="1080"></figure>
+      <figure class="slide"><img src="images/dysport-before-after-2-1080sq.jpg" alt="Before and after Dysport treatment, glabella lines" loading="lazy" width="1080" height="1080"></figure>
+    </div>
+    <button class="carousel__btn carousel__btn--prev" type="button" data-carousel-prev aria-label="Previous result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+    <button class="carousel__btn carousel__btn--next" type="button" data-carousel-next aria-label="Next result"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+
+  <div class="carousel__foot">
+    <div class="dots" data-carousel-dots role="tablist" aria-label="Results"></div>
+    <a class="btn" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Book my consultation</span></span></a>
+    <p class="disclaimer">Individual results vary. Real patients, unretouched.</p>
+  </div>
+</section>
+
+<!-- ============================ AREAS TREATED ============================ -->
+<section class="areas" id="areas">
+  <div class="areas__head">
+    <div class="section-head">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">AREAS WE TREAT</span></span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2 class="section-title">Six places a few units change everything.</h2>
+      </span>
+    </div>
+    <p class="areas__lead" data-animate="fade-up">Dosing is planned per muscle group, not per face. Treat one area or map a full upper third - the plan is built at your consultation.</p>
+  </div>
+
+  <div class="areas__strip" data-areas>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-forehead-lines.webp" alt="Forehead of a middle-aged woman showing horizontal forehead lines" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Forehead lines</h3>
+        <p class="area__note">Horizontal creases from raising the brows</p>
+      </div>
+    </article>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-frown-lines.webp" alt="Vertical frown lines between the brows of a middle-aged woman" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Frown lines</h3>
+        <p class="area__note">The vertical &ldquo;elevens&rdquo; between the brows</p>
+      </div>
+    </article>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-crows-feet.webp" alt="Crow&rsquo;s feet at the outer corner of the eye" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Crow&rsquo;s feet</h3>
+        <p class="area__note">Fine lines at the outer corners of the eyes</p>
+      </div>
+    </article>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-bunny-lines.webp" alt="Bunny lines across the bridge of the nose" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Bunny lines</h3>
+        <p class="area__note">Diagonal creases across the bridge of the nose</p>
+      </div>
+    </article>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-lip-lines.webp" alt="Vertical lip lines around the mouth" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Lip lines</h3>
+        <p class="area__note">Vertical lines around the mouth</p>
+      </div>
+    </article>
+    <article class="area" tabindex="0">
+      <img class="area__img" src="images/area-jawline-slimming.webp" alt="Jawline and masseter in profile" loading="lazy">
+      <span class="area__scrim"></span>
+      <div class="area__cap">
+        <h3 class="area__title">Jawline slimming</h3>
+        <p class="area__note">Masseter contouring and TMJ jaw tension</p>
+      </div>
+    </article>
+  </div>
+
+  <div class="areas__cta">
+    <a class="btn" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Map my areas at $9.99 a unit</span></span></a>
+    <p>Not sure which areas? We map it with you at the consultation.</p>
+  </div>
+</section>
+
+<!-- ============================ WHAT TO EXPECT ============================ -->
+<section class="expect">
+  <div class="expect__media" role="img" aria-label="Injector treating a patient in the Eternal Wellness treatment room"></div>
+  <span class="expect__wash"></span>
+  <span class="expect__scrim"></span>
+  <div class="expect__inner">
+    <div class="section-head">
+      <span class="eyebrow eyebrow--light"><span class="eyebrow__rule"></span><span class="eyebrow__text">YOUR VISIT</span></span>
+      <h2 class="section-title section-title--inv">Thirty minutes, start to finish.</h2>
+    </div>
+
+    <div class="expect__steps">
+      <article class="step">
+        <span class="step__tag">STEP 01</span>
+        <h3 class="step__title">Consultation</h3>
+        <p class="step__body">We assess your facial muscle activity, talk through your goals and design a personalised injection plan.</p>
+      </article>
+      <article class="step">
+        <span class="step__tag">STEP 02</span>
+        <h3 class="step__title">Mapping</h3>
+        <p class="step__body">The area is cleansed and precise injection points are marked to your own muscle anatomy.</p>
+      </article>
+      <article class="step">
+        <span class="step__tag">STEP 03</span>
+        <h3 class="step__title">Injection</h3>
+        <p class="step__body">Ultra-fine needles deliver measured doses. Most patients describe a brief, mild pinch. 10&ndash;30 minutes.</p>
+      </article>
+      <article class="step">
+        <span class="step__tag">STEP 04</span>
+        <h3 class="step__title">Review</h3>
+        <p class="step__body">Aftercare instructions, then a two-week follow-up to assess results and make any touch-up adjustments.</p>
+      </article>
+    </div>
+
+    <div class="expect__cta">
+      <a class="btn" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Book a 30-minute visit</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FORMULA COMPARE + OFFER RAIL ============================ -->
+<section class="formula" id="pricing">
+  <div class="formula__inner">
+    <div class="formula__content">
+      <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">CHOOSING A FORMULA</span></span>
+      <h2>Fast-onset or long-lasting.</h2>
+      <p class="formula__sub">We carry more than one FDA-approved wrinkle relaxer. They differ mainly in how quickly they switch on and how long they hold. We choose with you at consultation.</p>
+
+      <div class="compare">
+        <div class="compare__col">
+          <h3 class="compare__title">Fast-onset formula</h3>
+          <p class="compare__cap">Switches on quickly, ideal before a date on the calendar.</p>
+          <div class="compare__row"><span class="compare__label">ONSET</span><span class="compare__value">2&ndash;3 days to first softening</span></div>
+          <div class="compare__row"><span class="compare__label">FULL EFFECT</span><span class="compare__value">7&ndash;10 days</span></div>
+          <div class="compare__row"><span class="compare__label">DURATION</span><span class="compare__value">3&ndash;4 months</span></div>
+          <div class="compare__row"><span class="compare__label">BEST FOR</span><span class="compare__value">Events, first-timers, a quick refresh</span></div>
+          <div class="compare__row"><span class="compare__label">TREATMENT TIME</span><span class="compare__value">10&ndash;20 minutes</span></div>
+        </div>
+        <div class="compare__col">
+          <h3 class="compare__title">Long-lasting formula</h3>
+          <p class="compare__cap">Takes a little longer to settle, then holds.</p>
+          <div class="compare__row"><span class="compare__label">ONSET</span><span class="compare__value">4&ndash;7 days to first softening</span></div>
+          <div class="compare__row"><span class="compare__label">FULL EFFECT</span><span class="compare__value">10&ndash;14 days</span></div>
+          <div class="compare__row"><span class="compare__label">DURATION</span><span class="compare__value">4&ndash;5 months</span></div>
+          <div class="compare__row"><span class="compare__label">BEST FOR</span><span class="compare__value">Maintenance patients, stronger musculature</span></div>
+          <div class="compare__row"><span class="compare__label">TREATMENT TIME</span><span class="compare__value">15&ndash;30 minutes</span></div>
+        </div>
+      </div>
+
+      <p class="formula__note">Whichever formula we use, the $9.99 per unit introductory price is the same. We tell you which one is in the syringe and why, every time.</p>
+    </div>
+
+    <aside class="rail">
+      <div class="price-card">
+        <span class="price-card__label">INTRODUCTORY OFFER</span>
+        <span class="price-card__price">$9.99</span>
+        <span class="price-card__unit">per unit · new clients</span>
+        <span class="price-card__rule"></span>
+        <span class="price-card__ex-label">WORKED EXAMPLE</span>
+        <div class="price-card__ex">
+          <p>Most full treatments run 30&ndash;60 units across the forehead, frown lines and crow's feet.</p>
+          <p class="strong">30 units &asymp; $299.70 · 60 units &asymp; $599.40</p>
+        </div>
+        <p class="price-card__fin">Cherry financing available - flexible monthly payments, quick approval, no hard credit check.</p>
+        <a class="btn btn--block" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim $9.99 per unit</span></span></a>
+        <span class="price-card__exp">LIMITED TIME · NEW CLIENTS ONLY</span>
+      </div>
+      <div class="rail__aside">
+        <b>NO INSURANCE BILLING</b>
+        <p>Cosmetic treatment is not covered by insurance. Cherry financing splits any plan into monthly payments with no hard credit check.</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND 1 ============================ -->
+<section class="band band--clay">
+  <div class="band__inner">
+    <div class="band__copy">
+      <span class="clip" data-clip-wrap="title"><h2>Book while the $9.99 unit price is open.</h2></span>
+      <p>New clients, limited time. Same-day reply, no obligation, no pressure at the consult.</p>
+    </div>
+    <div class="band__action">
+      <a class="btn btn--white btn--block" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim $9.99 per unit</span></span></a>
+      <span class="band__note">OR CALL (231) 252-4474</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ REVIEWS (live Google Business Profile) ============================ -->
+<section class="reviews">
+  <div class="reviews__head">
+    <div class="reviews__headblock">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">REVIEWS FROM GOOGLE</span></span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2 class="reviews__title">What Northern Michigan says.</h2>
+      </span>
+    </div>
+    <div class="rating" data-animate="fade-up">
+      <span class="rating__value" data-count>5.0</span>
+      <div class="rating__meta">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <span class="rating__cap">RATING ON GOOGLE · 223 REVIEWS</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews__rows">
+    <div class="review-row" data-card-stagger="0.1">
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;The staff at Eternal Wellness are second to none! They always greet me with a smile, are prompt and helpful.&rdquo;</p>
+        <cite class="review__name">Lonny McClary</cite>
+      </blockquote>
+      <span class="review__seam"></span>
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;I drive an hour to Eternal Wellness and it&rsquo;s been well worth it every time!&rdquo;</p>
+        <cite class="review__name">Ashley Seyffer</cite>
+      </blockquote>
+      <span class="review__seam"></span>
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;I&rsquo;ve had several treatments with Brittnee and have always felt so taken care of in the best way.&rdquo;</p>
+        <cite class="review__name">Lauren Schumacher</cite>
+      </blockquote>
+    </div>
+
+    <div class="reviews__mid"><hr></div>
+
+    <div class="review-row" data-card-stagger="0.1">
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;Let me save you the time: go see Brittnee at Eternal Wellness.&rdquo;</p>
+        <cite class="review__name">Jillian Kaye</cite>
+      </blockquote>
+      <span class="review__seam"></span>
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;My first experience at Eternal Wellness exceeded my expectations. The space is absolutely beautiful.&rdquo;</p>
+        <cite class="review__name">Sara Lanno</cite>
+      </blockquote>
+      <span class="review__seam"></span>
+      <blockquote class="review">
+        <span class="stars" role="img" aria-label="5 out of 5 stars"></span>
+        <p class="review__quote">&ldquo;She made me feel so comfortable during the process.&rdquo;</p>
+        <cite class="review__name">Taylor Merchant</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ PROVIDERS + CLINIC ============================ -->
+<section class="providers">
+  <div class="providers__inner">
+    <div class="providers__col">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">WHO TREATS YOU</span></span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2>Certified injectors, under physician guidance.</h2>
+      </span>
+      <p class="providers__sub">Eternal Wellness is owner-operated. Certified aesthetic injectors perform every treatment under the guidance of our physician medical director, who sets the clinical protocols and reviews each plan.</p>
+
+      <article class="provider" data-animate="fade-up">
+        <div class="provider__portrait"><img src="images/Dr_Joel_Strehl.webp" alt="Dr. Joel Strehl, MD, FACS, FACOS" loading="lazy"></div>
+        <div class="provider__copy">
+          <h3 class="provider__name">Dr. Joel Strehl, MD, FACS, FACOS</h3>
+          <span class="provider__cred">OWNER · FOUNDER · MEDICAL DIRECTOR</span>
+          <p class="provider__bio">Board-certified general surgeon with 15+ years of clinical and surgical experience. He sets the clinical protocols, dosing standards and candidacy criteria, and reviews every treatment plan.</p>
+        </div>
+      </article>
+
+      <article class="provider" data-animate="fade-up">
+        <div class="provider__portrait"><img src="images/Brittnee_Keyes.webp" alt="Brittnee Keyes, FNP-C" loading="lazy"></div>
+        <div class="provider__copy">
+          <h3 class="provider__name">Brittnee Keyes, FNP-C</h3>
+          <span class="provider__cred">CO-OWNER · CERTIFIED AESTHETIC INJECTOR</span>
+          <p class="provider__bio">Board-certified Family Nurse Practitioner and certified aesthetic injector with 15+ years of clinical and surgical experience. Specialises in subtle, natural-looking results and anatomy-driven injection mapping.</p>
+        </div>
+      </article>
+
+      <div class="cred-strip">
+        <span>20+ YEARS OF CLINICAL RESEARCH</span>
+        <span>500+ PEER-REVIEWED STUDIES</span>
+        <span>IN PRACTICE SINCE 2019</span>
+      </div>
+    </div>
+
+    <div class="clinic" data-card-stagger="0.1">
+      <div class="clinic__photo clinic__photo--1"><img src="images/clinic-lobby-waiting-area.webp" alt="Eternal Wellness lobby and waiting area" loading="lazy"></div>
+      <div class="clinic__photo clinic__photo--2"><img src="images/clinic-treatment-room.webp" alt="Private treatment room" loading="lazy"></div>
+      <div class="clinic__cap">
+        <b>400 W FRONT ST, SUITE 200</b>
+        <p>One suite on Front Street in downtown Traverse City - private treatment rooms, on-street and lot parking, and a waiting room that does not feel like a clinic.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ SAFETY ============================ -->
+<section class="safety">
+  <div class="safety__head">
+    <div class="safety__left">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">SAFETY, HONESTLY</span></span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2>What we tell every patient.</h2>
+      </span>
+    </div>
+    <div class="safety__right" data-animate="fade-up">
+      <p>Board-certified medical oversight on every treatment. Here is the honest side effect profile, before you book rather than after.</p>
+    </div>
+  </div>
+
+  <div class="safety__cols">
+    <div class="safety__col">
+      <span class="safety__accent"></span>
+      <span class="safety__label">COMMON AND TEMPORARY</span>
+      <div class="safety__items" data-card-stagger="0.08">
+        <div class="safety__item"><p>Mild redness at the injection sites, settling within minutes to a few hours.</p></div>
+        <div class="safety__item"><p>Slight swelling or a small bruise where the needle entered, usually gone in one to two days.</p></div>
+        <div class="safety__item"><p>A mild headache on the day of treatment, which over-the-counter relief handles.</p></div>
+      </div>
+    </div>
+    <div class="safety__col">
+      <span class="safety__accent"></span>
+      <span class="safety__label">LESS COMMON</span>
+      <div class="safety__items" data-card-stagger="0.08">
+        <div class="safety__item"><p>Temporary brow or eyelid heaviness, in roughly 1&ndash;5% of patients.</p></div>
+        <div class="safety__item"><p>Slight asymmetry as the product distributes through the muscle.</p></div>
+        <div class="safety__item"><p>Both resolve on their own. We review you at two weeks either way and adjust if needed.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" data-animate="fade-up">
+    <div class="panel__top">
+      <div class="panel__left">
+        <h3>Not suitable if</h3>
+        <p>We screen for all of these at consultation. If any apply, we will tell you and we will not treat.</p>
+      </div>
+      <div class="panel__right">
+        <div class="contra-col">
+          <div class="contra"><span class="contra__dash"></span><p>You are pregnant or breastfeeding.</p></div>
+          <div class="contra"><span class="contra__dash"></span><p>You have a known allergy to botulinum toxin type A.</p></div>
+        </div>
+        <div class="contra-col">
+          <div class="contra"><span class="contra__dash"></span><p>There is an active skin infection at the injection site.</p></div>
+          <div class="contra"><span class="contra__dash"></span><p>You live with a neuromuscular condition - myasthenia gravis, Lambert-Eaton syndrome or ALS.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="panel__bottom">
+      <b>AFTERCARE</b>
+      <p>No strenuous exercise for 4&ndash;6 hours, don't rub or massage the treated area, and stay upright for the first 4&ndash;6 hours. Everything else resumes the same day - there is no downtime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ CTA BAND 2 ============================ -->
+<section class="band band--cocoa">
+  <div class="band__inner">
+    <div class="band__copy">
+      <span class="clip" data-clip-wrap="title"><h2>Still deciding? Come in and ask.</h2></span>
+      <p>The consultation is a conversation, not a sales appointment. You will leave with a unit count, a price and no obligation.</p>
+    </div>
+    <div class="band__action">
+      <a class="btn btn--white btn--block" href="#book"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Book my consultation</span></span></a>
+      <span class="band__note">THURSDAY EVENINGS AVAILABLE</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FORM + LOCATION ============================ -->
+<section class="contact" id="book">
+  <div class="contact__inner">
+    <div class="formcol">
+      <span class="clip" data-clip-wrap="tag">
+        <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">BOOK YOUR CONSULT</span></span>
+      </span>
+      <span class="clip" data-clip-wrap="title">
+        <h2>Claim the $9.99 unit price.</h2>
+      </span>
+      <p class="formcol__sub">Send this and we reply the same business day with two or three appointment times.</p>
+
+      <form class="fields" novalidate>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">First name</span><input type="text" name="first" placeholder="First name" autocomplete="given-name"></label>
+          <label class="field"><span class="sr-only">Last name</span><input type="text" name="last" placeholder="Last name" autocomplete="family-name"></label>
+        </div>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">Email</span><input type="email" name="email" placeholder="Email" autocomplete="email"></label>
+          <label class="field"><span class="sr-only">Phone</span><input type="tel" name="phone" placeholder="Phone" autocomplete="tel"></label>
+        </div>
+        <label class="field field--area"><span class="sr-only">Message</span><textarea name="message" rows="3" placeholder="Message - anything you want us to know"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent"><span>I agree to be contacted about my appointment.</span></label>
+        <button class="btn btn--block" type="submit"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim $9.99 per unit</span></span></button>
+        <p class="form-note">New clients only. Limited-time introductory pricing. Cosmetic treatment is not covered by insurance.</p>
+      </form>
+
+      <div class="reassure">
+        <div class="reassure__item"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.6l4.5 4.6 8.5-10"/></svg><span>Same business day reply, seven days a week.</span></div>
+        <div class="reassure__item"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.6l4.5 4.6 8.5-10"/></svg><span>No deposit and no card details to book a consult.</span></div>
+        <div class="reassure__item"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.6l4.5 4.6 8.5-10"/></svg><span>Board-certified medical oversight on every plan.</span></div>
+      </div>
+    </div>
+
+    <div class="loccol">
+      <span class="loccol__label">VISIT US</span>
+      <div class="loccol__addr">
+        <h3>400 W Front St, Suite 200</h3>
+        <p>Traverse City, MI 49684</p>
+      </div>
+      <div class="detail-rows">
+        <div class="detail"><span class="detail__label">PHONE</span><span class="detail__value"><a href="tel:+12312524474">(231) 252-4474</a></span></div>
+        <div class="detail"><span class="detail__label">EMAIL</span><span class="detail__value"><a href="mailto:info@eternalwellnessmedicalspa.com">info@eternalwellnessmedicalspa.com</a></span></div>
+        <div class="detail"><span class="detail__label">HOURS</span><span class="detail__value">Mon&ndash;Thu 8:30 AM &ndash; 5:00 PM · Fri 10:00 AM &ndash; 4:00 PM · Sat&ndash;Sun Closed. Thursday evening appointments available.</span></div>
+        <div class="detail"><span class="detail__label">SERVING</span><span class="detail__value">Traverse City, Petoskey, Cadillac, Manistee, Elk Rapids, Suttons Bay, Leland and Northern Michigan.</span></div>
+      </div>
+      <div class="map-wrap">
+        <iframe class="map" title="Map showing Eternal Wellness Medical Spa, 400 W Front St Suite 200, Traverse City"
+                src="https://www.google.com/maps?q=Eternal+Wellness+Medical+Spa,+400+W+Front+St+%23200,+Traverse+City,+MI+49684&z=16&output=embed"
+                loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <a class="map__link" href="https://maps.app.goo.gl/t1JoEqCK8SZ9RyHG9" target="_blank" rel="noopener noreferrer">Open in Google Maps</a>
+        <p class="map__cap">400 W Front St, Suite 200 · Traverse City, MI - second floor, on the corner of Front and Union. Street and lot parking.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================ FAQ ============================ -->
+<section class="faq" id="faq">
+  <div class="section-head">
+    <span class="clip" data-clip-wrap="tag">
+      <span class="eyebrow"><span class="eyebrow__rule"></span><span class="eyebrow__text">COMMON QUESTIONS</span></span>
+    </span>
+    <span class="clip" data-clip-wrap="title">
+      <h2 class="section-title">Questions people actually ask.</h2>
+    </span>
+  </div>
+
+  <div class="faq__list" data-faq>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">Will I look frozen?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">No - not with an experienced injector. Precise, anatomy-driven dosing keeps your ability to smile, laugh and express emotion. The goal is refreshed, never overdone.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">Does it hurt?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">Most patients describe a brief, mild pinch that lasts seconds. Ultra-fine needles are used, and ice or topical numbing is available if you would like it.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">How many units will I need?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">It depends on your muscle strength and which areas you treat. Most full treatments run 30&ndash;60 units across the forehead, frown lines and crow&rsquo;s feet. We confirm your exact plan at consultation.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">How soon will I see results?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">First softening appears in 2&ndash;5 days depending on the formula, with full results at 7&ndash;14 days.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">How long does it last?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">Three to five months, depending on your metabolism, muscle strength and the area treated. Most patients return every 3&ndash;4 months.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">What age should I start?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">There is no single right age. Many patients begin preventative treatment in their late twenties or thirties; others start when resting lines begin to bother them.</span></span>
+      </button>
+    </div>
+    <div class="faq__row">
+      <button class="faq__head" type="button" aria-expanded="false">
+        <span class="faq__qcol"><span class="faq__q">Is it covered by insurance?</span><span class="faq__toggle" aria-hidden="true">+</span></span>
+        <span class="faq__acol"><span class="faq__a">Cosmetic treatment is not covered. Therapeutic use for migraine or jaw tension sometimes is - check with your provider. Financing through Cherry is available either way.</span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ FOOTER (from tmj.html) ============================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="images/logo-w.png" alt="Eternal Wellness Medical Spa" loading="lazy">
+        <p>Advanced therapeutic treatments and medical wellness in Traverse City, Michigan. Where science meets healing.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:2312524474">(231) 252 4474</a></li>
+          <li><a href="mailto:info@eternalwellnessmedicalspa.com">info@eternalwellnessmedicalspa.com</a></li>
+          <li><a href="https://maps.app.goo.gl/t1JoEqCK8SZ9RyHG9" target="_blank" rel="noopener noreferrer">400 W Front St #200<br>Traverse City, MI</a></li>
+          <li><a href="#book">Mon&ndash;Thu: 8:30AM &ndash; 5PM<br>Fri: 10AM &ndash; 4PM</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-legal">Eternal Wellness Medical Spa provides FDA-approved injectable treatments under board-certified medical oversight. Individual results vary. This page is advertising, not medical advice - suitability is determined at consultation. Cosmetic treatment is not covered by insurance.</p>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Eternal Wellness Medical Spa. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/eternal_wellness/" aria-label="Instagram" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        <a href="https://www.facebook.com/eternalwellnessmi" aria-label="Facebook" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+        <a href="https://www.youtube.com/@Dr.JoelStrehl" aria-label="YouTube" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+/* --- hero card mask wrapper (keeps the card shadow out of the clip) --- */
+.hero__cardwrap{flex:0 0 420px;padding:0 30px 44px;margin:0 -30px -44px;}
+.hero__cardwrap .hero__card{flex:1 1 auto;width:100%;margin-top:16px;}
+@media (max-width:1200px){
+  /* the 30px side padding is the shadow bleed, so the card is 60px narrower */
+  .hero__cardwrap{flex:0 0 auto;width:clamp(360px, 38vw, 420px);max-width:none;}
+  .hero__cardwrap .hero__card{margin-top:0;}
+}
+@media (max-width:1000px) and (min-height:800px){
+  .hero__cardwrap{flex:1 1 auto;width:100%;max-width:580px;}
+}
+/* --- form success note --- */
+.form-sent{font-size:14px;line-height:1.5;color:var(--clay);font-weight:500;}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" onerror="window.__ewReveal&&window.__ewReveal()"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.3.26/dist/lenis.min.js"></script>
+<script>
+(function () {
+  "use strict";
+
+  var reduced  = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var isMobile = matchMedia("(max-width: 768px)").matches;
+  var isTouch  = ("ontouchstart" in window) || navigator.maxTouchPoints > 0;
+  /* a device that can genuinely hover - everything else gets tap equivalents */
+  var finePointer = matchMedia("(hover:hover) and (pointer:fine)").matches;
+  var cheap    = isMobile && (navigator.hardwareConcurrency || 8) <= 4;
+
+  /* ---------------------------------------------------------------
+     Static content that is cheaper to generate than to hand-author
+     --------------------------------------------------------------- */
+  var STAR = '<svg viewBox="0 0 10 10" aria-hidden="true"><path d="M5 0 L10 5 L5 10 L0 5 Z"/></svg>';
+  document.querySelectorAll(".stars").forEach(function (s) { s.innerHTML = STAR.repeat(5); });
+
+  document.querySelectorAll("select").forEach(function (sel) {
+    var sync = function () { sel.classList.toggle("has-value", !!sel.value); };
+    sel.addEventListener("change", sync); sync();
+  });
+
+  /* ---------------------------------------------------------------
+     Booking card lives inside the hero on desktop and moves into its own
+     band directly below the hero from 1200px down, so the hero can always
+     be exactly one screen tall on tablet and mobile.
+     --------------------------------------------------------------- */
+  (function initHeroBooking() {
+    var wrap = document.querySelector(".hero__cardwrap");
+    var slot = document.querySelector("[data-booking-slot]");
+    var home = document.querySelector(".hero__top");
+    if (!wrap || !slot || !home) return;
+    /* phones, and any viewport too short to hold the card inside one screen */
+    var mq = matchMedia("(max-width: 640px), (max-height: 640px)");
+    function place() {
+      if (mq.matches) {
+        if (wrap.parentNode !== slot) { slot.appendChild(wrap); }
+        slot.classList.add("is-filled");
+      } else {
+        if (wrap.parentNode !== home) { home.appendChild(wrap); }
+        slot.classList.remove("is-filled");
+      }
+      if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+    }
+    if (mq.addEventListener) mq.addEventListener("change", place);
+    else if (mq.addListener) mq.addListener(place);
+    place();
+  })();
+
+  if (!window.gsap || !window.ScrollTrigger) { if (window.__ewReveal) window.__ewReveal(); return; }
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.config({ nullTargetWarn: false });
+  gsap.defaults({ ease: "power3.out", duration: 0.6 });
+
+  var CLAY = "#926D5C", CLAY_HOVER = "#7D5C4C";
+
+  /* ---------------------------------------------------------------
+     8.1  Lenis smooth scroll, driven by the GSAP ticker
+     --------------------------------------------------------------- */
+  var lenis = null;
+  if (!reduced && !isTouch && window.Lenis) {
+    lenis = new Lenis({
+      duration: 1.2,
+      easing: function (t) { return Math.min(1, 1.001 - Math.pow(2, -10 * t)); },
+      orientation: "vertical",
+      gestureOrientation: "vertical",
+      smoothWheel: true,
+      touchMultiplier: 2,
+      infinite: false
+    });
+    lenis.on("scroll", ScrollTrigger.update);
+    gsap.ticker.add(function (t) { lenis.raf(t * 1000); });
+    gsap.ticker.lagSmoothing(0);
+    window.lenis = lenis;
+    document.addEventListener("visibilitychange", function () {
+      document.hidden ? lenis.stop() : lenis.start();
+    });
+  }
+
+  window.gsapScrollTo = function (target, opts) {
+    opts = opts || {};
+    var duration = opts.duration || 1.2, offset = opts.offset || 0;
+    if (lenis) { lenis.scrollTo(target, { duration: duration, offset: offset }); return; }
+    var el = typeof target === "string" ? document.querySelector(target) : target;
+    if (el && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var id = a.getAttribute("href");
+      if (!id || id === "#" || !document.querySelector(id)) return;
+      e.preventDefault();
+      window.gsapScrollTo(id, { offset: -100 });
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     Header: glass bar tightens once the page leaves the hero
+     --------------------------------------------------------------- */
+  (function initHeaderScroll() {
+    var header = document.getElementById("siteHeader");
+    if (!header) return;
+    var on = false;
+    var apply = function (y) {
+      var next = y > 60;
+      if (next !== on) { on = next; header.classList.toggle("scrolled", on); }
+    };
+    if (lenis) lenis.on("scroll", function (e) { apply(e.scroll); });
+    window.addEventListener("scroll", function () { apply(window.scrollY); }, { passive: true });
+    apply(window.scrollY);
+  })();
+
+  /* ---------------------------------------------------------------
+     5.1  Button engine: directional wipe + label inversion
+     --------------------------------------------------------------- */
+  document.querySelectorAll(".btn").forEach(function (btn) {
+    var inner = btn.querySelector(".btn__inner");
+    var wipe  = btn.querySelector(".btn__wipe");
+    var label = btn.querySelector(".btn__label");
+    if (!inner || !wipe || !label) return;
+
+    var ghost = btn.classList.contains("btn--ghost");
+    var white = btn.classList.contains("btn--white");
+    var toColor  = white ? "#FFFFFF" : CLAY;
+    var toBorder = ghost ? "rgba(255,255,255,0.9)" : (white ? "rgba(146,109,92,0.9)" : "rgba(146,109,92,0.5)");
+
+    gsap.set(wipe, { scaleX: 0, transformOrigin: "100% center" });
+
+    var tl = gsap.timeline({ paused: true })
+      .to(wipe,  { scaleX: 1, duration: 0.45, ease: "power4.out" }, 0)
+      .to(label, { color: toColor, duration: 0.3, ease: "power1.out" }, 0.05)
+      .to(inner, { borderColor: toBorder, duration: 0.3, ease: "power1.out" }, 0)
+      .to(btn,   { boxShadow: "0 4px 16px rgba(146,109,92,0.3)", duration: 0.3, ease: "power1.out" }, 0);
+
+    var enter = function () { gsap.set(wipe, { transformOrigin: "0% center" }); tl.play(); };
+    var leave = function () { tl.reverse(); };
+    if (finePointer) {
+      btn.addEventListener("mouseenter", enter);
+      btn.addEventListener("mouseleave", leave);
+    } else {
+      /* touch: the wipe plays on press and releases just after the tap */
+      btn.addEventListener("touchstart", enter, { passive: true });
+      btn.addEventListener("touchend", function () { setTimeout(leave, 240); }, { passive: true });
+      btn.addEventListener("touchcancel", leave, { passive: true });
+    }
+    btn.addEventListener("focus", enter, true);
+    btn.addEventListener("blur", leave, true);
+  });
+
+  /* 5.2  prose / detail link hover (pointer devices only) */
+  if (finePointer) {
+    document.querySelectorAll(".detail__value a, .footer-col a").forEach(function (a) {
+      a.addEventListener("mouseenter", function () { gsap.to(a, { color: CLAY_HOVER, duration: 0.15, ease: "power1.out" }); });
+      a.addEventListener("mouseleave", function () { gsap.to(a, { color: "", duration: 0.15, ease: "power1.out" }); });
+    });
+  }
+
+  /* 5.3  hover -> tap. On touch pointers the hover-only affordances
+     (step cards, provider portraits, clinic photos) are driven by a tap.
+     Tapping the same element again, or anywhere outside, releases it. */
+  (function initTapStates() {
+    if (finePointer) return;
+    function tapToggle(selector) {
+      var nodes = Array.prototype.slice.call(document.querySelectorAll(selector));
+      if (!nodes.length) return;
+      nodes.forEach(function (node) {
+        node.addEventListener("click", function () {
+          var on = node.classList.contains("is-tapped");
+          nodes.forEach(function (n) { n.classList.remove("is-tapped"); });
+          if (!on) node.classList.add("is-tapped");
+        });
+      });
+      document.addEventListener("click", function (e) {
+        if (e.target && e.target.closest && e.target.closest(selector)) return;
+        nodes.forEach(function (n) { n.classList.remove("is-tapped"); });
+      });
+    }
+    tapToggle(".step");
+    tapToggle(".provider__portrait");
+    tapToggle(".clinic__photo");
+  })();
+
+  /* ---------------------------------------------------------------
+     9.1  Hero on-load choreography
+     --------------------------------------------------------------- */
+  (function initHero() {
+    var hero = document.querySelector("[data-hero-animate]");
+    var vid = document.querySelector("video[data-hero-media]");
+    if (vid && reduced) { try { vid.pause(); vid.removeAttribute("autoplay"); } catch (e) {} }
+    if (!hero || hero.classList.contains("hero-loaded")) return;
+
+    var nav      = document.querySelector("[data-hero-nav]");
+    var media    = hero.querySelector("[data-hero-media]");
+    var overlay  = hero.querySelector("[data-hero-overlay]");
+    var title    = hero.querySelector("[data-hero-title]");
+    var info     = hero.querySelectorAll("[data-hero-info]");
+    /* queried from the document: below 1200px the card has been moved out of the hero */
+    var featured = document.querySelector("[data-hero-featured]");
+
+    if (reduced) {
+      gsap.set([media, overlay, title, featured].concat(Array.prototype.slice.call(info)),
+               { clearProps: "all" });
+      if (nav) gsap.set(nav, { translate: "0 0" });
+      hero.classList.add("hero-loaded");
+      return;
+    }
+
+    var ease = "power3.out";
+    var tl = gsap.timeline({ delay: 0.1, onComplete: function () { hero.classList.add("hero-loaded"); } });
+    if (media)        tl.to(media,    { scale: 1, duration: 1, ease: ease }, 0);
+    if (overlay)      tl.to(overlay,  { opacity: 1, duration: 0.8, ease: ease }, 0.1);
+    if (nav)          tl.to(nav,      { translate: "0 0", duration: 0.6, ease: "power2.out" }, 0.15);
+    if (title)        tl.to(title,    { y: 0, duration: 0.8, ease: ease }, 0.45);
+    if (info.length)  tl.to(info,     { y: 0, duration: 0.6, ease: ease, stagger: 0.08 }, 0.75);
+    if (featured)     tl.to(featured, { y: 0, autoAlpha: 1, duration: 0.6, ease: ease }, 0.75);
+  })();
+
+  /* ---------------------------------------------------------------
+     8.3  Masked tag / title reveals, grouped per section
+     --------------------------------------------------------------- */
+  (function initClipWraps() {
+    var groups = new Map();
+    document.querySelectorAll("[data-clip-wrap]").forEach(function (w) {
+      var sec = w.closest("section");
+      if (!sec) return;
+      if (!groups.has(sec)) groups.set(sec, []);
+      groups.get(sec).push(w);
+    });
+
+    groups.forEach(function (wraps, section) {
+      var tags = [], titles = [];
+      wraps.forEach(function (w) {
+        var child = w.firstElementChild;
+        if (!child || child.classList.contains("clip-revealed")) return;
+        var kind = w.getAttribute("data-clip-wrap");
+        if (kind === "tag") tags.push(child);
+        if (kind === "title") titles.push(child);
+      });
+      if (!tags.length && !titles.length) return;
+
+      if (reduced) {
+        gsap.set(tags.concat(titles), { clearProps: "transform" });
+        return;
+      }
+
+      tags.forEach(function (t) { gsap.set(t, { y: 60 }); });
+      titles.forEach(function (t) { gsap.set(t, { yPercent: 110 }); });
+
+      ScrollTrigger.create({
+        trigger: section,
+        start: isMobile ? "top 85%" : "top 75%",
+        once: true,
+        fastScrollEnd: true,
+        onEnter: function () {
+          var tl = gsap.timeline();
+          tags.forEach(function (t) {
+            tl.to(t, { y: 0, duration: 0.65, ease: "power3.out",
+                       onComplete: function () { t.classList.add("clip-revealed"); } }, 0);
+          });
+          titles.forEach(function (t) {
+            tl.to(t, { yPercent: 0, duration: 0.68, ease: "power3.out",
+                       onComplete: function () { t.classList.add("clip-revealed"); } },
+                 tags.length ? 0.15 : 0);
+          });
+        }
+      });
+    });
+  })();
+
+  /* ---------------------------------------------------------------
+     8.2  [data-animate] reveal engine
+     --------------------------------------------------------------- */
+  document.querySelectorAll("[data-animate]:not(.is-animated)").forEach(function (el) {
+    var type     = el.getAttribute("data-animate") || "fade-in";
+    var delay    = parseFloat(el.getAttribute("data-delay") || "0");
+    var duration = parseFloat(el.getAttribute("data-duration") || (cheap ? "0.4" : "0.6"));
+    var stagger  = parseFloat(el.getAttribute("data-stagger") || (cheap ? "0.08" : "0.1"));
+
+    if (reduced) { el.classList.add("is-animated"); return; }
+    if (type === "stagger") { gsap.set(el.children, { opacity: 0, y: 30 }); }
+    else { gsap.set(el, { opacity: 0, y: type === "fade-up" ? 40 : 0 }); }
+
+    var done = function () { el.classList.add("is-animated"); };
+    var base = { opacity: 1, duration: duration, delay: delay, ease: "power3.out", clearProps: "transform", onComplete: done };
+    var map = {
+      "fade-up":  Object.assign({}, base, { y: 0 }),
+      "fade-in":  base,
+      "stagger":  { opacity: 1, y: 0, duration: duration, stagger: stagger, ease: "power3.out", onComplete: done }
+    };
+    var vars   = map[type] || base;
+    var target = type === "stagger" ? el.children : el;
+
+    ScrollTrigger.create({
+      trigger: el,
+      start: isMobile ? "top 90%" : "top 85%",
+      once: true,
+      fastScrollEnd: true,
+      onEnter: function () { gsap.to(target, vars); }
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     8.5  [data-card-stagger] grid reveal
+     --------------------------------------------------------------- */
+  document.querySelectorAll("[data-card-stagger]").forEach(function (group) {
+    var items = group.children;
+    if (!items.length) return;
+    if (reduced) { gsap.set(items, { opacity: 1, clearProps: "transform" }); return; }
+    var stagger = parseFloat(group.getAttribute("data-card-stagger") || "0.1");
+    gsap.set(items, { opacity: 0, y: 30 });
+    ScrollTrigger.create({
+      trigger: group,
+      start: isMobile ? "top 85%" : "top 80%",
+      once: true,
+      fastScrollEnd: true,
+      onEnter: function () {
+        gsap.to(items, { opacity: 1, y: 0, duration: 0.5, ease: "expo.out", stagger: stagger, clearProps: "transform" });
+      }
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     8.8  Parallax - the only scrubbed effect
+     --------------------------------------------------------------- */
+  if (!reduced && !isMobile && (navigator.hardwareConcurrency || 8) > 4) {
+    document.querySelectorAll("[data-parallax]").forEach(function (el) {
+      var depth = parseFloat(el.getAttribute("data-parallax") || "0.5");
+      gsap.to(el, {
+        y: function () { return depth * 100; },
+        ease: "none",
+        scrollTrigger: { trigger: el, start: "top bottom", end: "bottom top", scrub: true }
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------------
+     8.9  Stats count-up
+     --------------------------------------------------------------- */
+  document.querySelectorAll("[data-count]").forEach(function (el) {
+    var m = (el.textContent || "").trim().match(/^([^\d-]*)(-?\d+(?:\.\d+)?)(.*)$/);
+    if (!m) return;
+    var prefix = m[1], raw = m[2], suffix = m[3];
+    var end = parseFloat(raw);
+    var decimals = raw.indexOf(".") > -1 ? raw.split(".")[1].length : 0;
+
+    if (reduced || end === 0) { el.textContent = prefix + end.toFixed(decimals) + suffix; return; }
+
+    var counter = { v: 0 };
+    gsap.to(counter, {
+      v: end, duration: 1.6, ease: "power2.out",
+      onUpdate: function () { el.textContent = prefix + counter.v.toFixed(decimals) + suffix; },
+      scrollTrigger: { trigger: el, start: "top 85%", once: true }
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     Results carousel
+     --------------------------------------------------------------- */
+  (function initCarousel() {
+    var root = document.querySelector("[data-carousel]");
+    if (!root) return;
+    var slides = Array.prototype.slice.call(root.querySelectorAll(".slide"));
+    var dotsBox = document.querySelector("[data-carousel-dots]");
+    if (!slides.length) return;
+    var index = 0, n = slides.length;
+
+    if (dotsBox) {
+      dotsBox.innerHTML = "";
+      slides.forEach(function (_, i) {
+        var d = document.createElement("button");
+        d.type = "button";
+        d.className = "dot";
+        d.setAttribute("role", "tab");
+        d.setAttribute("aria-label", "Result " + (i + 1) + " of " + n);
+        d.addEventListener("click", function () { go(i); });
+        dotsBox.appendChild(d);
+      });
+    }
+
+    function render() {
+      slides.forEach(function (s, i) {
+        s.classList.remove("is-active", "is-prev", "is-next", "is-hidden");
+        if (i === index) s.classList.add("is-active");
+        else if (i === (index - 1 + n) % n) s.classList.add("is-prev");
+        else if (i === (index + 1) % n) s.classList.add("is-next");
+        else s.classList.add("is-hidden");
+        s.setAttribute("aria-hidden", i === index ? "false" : "true");
+      });
+      if (dotsBox) {
+        Array.prototype.forEach.call(dotsBox.children, function (d, i) {
+          d.classList.toggle("is-on", i === index);
+          d.setAttribute("aria-selected", i === index ? "true" : "false");
+        });
+      }
+    }
+    function go(i) { index = (i + n) % n; render(); }
+
+    var prev = document.querySelector("[data-carousel-prev]");
+    var next = document.querySelector("[data-carousel-next]");
+    if (prev) prev.addEventListener("click", function () { go(index - 1); });
+    if (next) next.addEventListener("click", function () { go(index + 1); });
+
+    root.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") go(index - 1);
+      if (e.key === "ArrowRight") go(index + 1);
+    });
+    root.setAttribute("tabindex", "0");
+
+    /* touch swipe, 1:1 with no inertia (matches the site's drag register) */
+    var startX = null;
+    root.addEventListener("touchstart", function (e) { startX = e.touches[0].clientX; }, { passive: true });
+    root.addEventListener("touchend", function (e) {
+      if (startX === null) return;
+      var dx = e.changedTouches[0].clientX - startX;
+      if (Math.abs(dx) > 40) go(index + (dx < 0 ? 1 : -1));
+      startX = null;
+    }, { passive: true });
+
+    render();
+  })();
+
+  /* ---------------------------------------------------------------
+     Areas strip: expand on hover / focus, default to the third card
+     --------------------------------------------------------------- */
+  (function initAreas() {
+    var strip = document.querySelector("[data-areas]");
+    if (!strip) return;
+    var cards = Array.prototype.slice.call(strip.querySelectorAll(".area"));
+
+    function open(i) { cards.forEach(function (c, k) { c.classList.toggle("is-open", k === i); }); }
+    function closeAll() { cards.forEach(function (c) { c.classList.remove("is-open"); }); }
+
+    cards.forEach(function (c, i) {
+      if (finePointer) c.addEventListener("mouseenter", function () { open(i); });
+      c.addEventListener("focus", function () {
+        /* pointer taps must not count as focus-open, or the click below reads
+           the card as already open and immediately closes it again */
+        if (!finePointer && !(c.matches && c.matches(":focus-visible"))) return;
+        open(i);
+      });
+      c.addEventListener("click", function () {
+        /* on touch the same card toggles shut again */
+        if (!finePointer && c.classList.contains("is-open")) { closeAll(); return; }
+        open(i);
+      });
+    });
+    if (finePointer) strip.addEventListener("mouseleave", closeAll);
+    strip.addEventListener("focusout", function (e) {
+      if (!strip.contains(e.relatedTarget)) closeAll();
+    });
+    closeAll();
+  })();
+
+  /* ---------------------------------------------------------------
+     FAQ accordion - open by default (matches the reference design),
+     collapses on click. 0.3s power1.out, same as the mega-menu engine.
+     --------------------------------------------------------------- */
+  (function initFaq() {
+    var list = document.querySelector("[data-faq]");
+    if (!list) return;
+    list.querySelectorAll(".faq__head").forEach(function (head) {
+      var panel  = head.querySelector(".faq__acol");
+      var toggle = head.querySelector(".faq__toggle");
+      if (!panel) return;
+
+      head.addEventListener("click", function () {
+        var isOpen = head.getAttribute("aria-expanded") === "true";
+        head.setAttribute("aria-expanded", isOpen ? "false" : "true");
+
+        if (reduced) {
+          panel.style.height = isOpen ? "0px" : "auto";
+          if (toggle) toggle.textContent = isOpen ? "+" : "−";
+          ScrollTrigger.refresh();
+          return;
+        }
+
+        gsap.killTweensOf(panel);
+        if (isOpen) {
+          gsap.to(panel, { height: 0, opacity: 0, duration: 0.3, ease: "power1.out",
+                           onComplete: function () { ScrollTrigger.refresh(); } });
+        } else {
+          gsap.set(panel, { height: 0, opacity: 0 });
+          gsap.to(panel, { height: "auto", opacity: 1, duration: 0.3, ease: "power1.out",
+                           onComplete: function () { panel.style.height = "auto"; ScrollTrigger.refresh(); } });
+        }
+        if (toggle) {
+          gsap.to(toggle, { opacity: 0, duration: 0.09, ease: "power1.out",
+            onComplete: function () {
+              toggle.textContent = isOpen ? "+" : "−";
+              gsap.to(toggle, { opacity: 1, duration: 0.12, ease: "power1.out" });
+            }
+          });
+        }
+      });
+    });
+  })();
+
+  /* ---------------------------------------------------------------
+     7.2  Form field focus (fallback register: 180ms, power2.out)
+     --------------------------------------------------------------- */
+  document.querySelectorAll(".field").forEach(function (field) {
+    var input = field.querySelector("input, select, textarea");
+    if (!input) return;
+    input.addEventListener("focus", function () {
+      gsap.to(field, { borderColor: CLAY, boxShadow: "0 0 0 3px rgba(146,109,92,0.12)", duration: 0.18, ease: "power2.out" });
+    });
+    input.addEventListener("blur", function () {
+      gsap.to(field, { borderColor: "rgba(0,0,0,0.1)", boxShadow: "0 0 0 0 rgba(146,109,92,0)", duration: 0.18, ease: "power2.out" });
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     Form submit - no endpoint wired yet, so confirm in place
+     --------------------------------------------------------------- */
+  document.querySelectorAll("form").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var btn = form.querySelector(".btn");
+      if (btn) gsap.fromTo(btn, { scale: 1 }, { scale: 0.985, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 });
+      var note = form.querySelector(".form-sent");
+      if (!note) {
+        note = document.createElement("p");
+        note.className = "form-sent";
+        form.appendChild(note);
+      }
+      note.textContent = "Thank you. We will reply the same business day with appointment times.";
+      gsap.fromTo(note, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" });
+    });
+  });
+
+  /* ---------------------------------------------------------------
+     8.11  Lifecycle plumbing
+     --------------------------------------------------------------- */
+  /* ---------------------------------------------------------------
+     Safety net: nothing may be left in its hidden pre-reveal state
+     --------------------------------------------------------------- */
+  function sweep() {
+    ScrollTrigger.refresh();
+    var fold = window.scrollY + window.innerHeight;
+    document.querySelectorAll("[data-clip-wrap]").forEach(function (w) {
+      var child = w.firstElementChild;
+      if (!child || child.classList.contains("clip-revealed")) return;
+      var sec = w.closest("section");
+      if (sec && sec.getBoundingClientRect().top + window.scrollY > fold) return;
+      gsap.set(child, { y: 0, yPercent: 0 });
+      child.classList.add("clip-revealed");
+    });
+    document.querySelectorAll("[data-animate]:not(.is-animated)").forEach(function (el) {
+      if (el.getBoundingClientRect().top + window.scrollY > fold) return;
+      gsap.set(el.getAttribute("data-animate") === "stagger" ? el.children : el, { opacity: 1, y: 0 });
+      el.classList.add("is-animated");
+    });
+  }
+  window.addEventListener("load", function () { sweep(); setTimeout(sweep, 1200); });
+  setTimeout(sweep, 3000);
+
+  var rt;
+  function relayout() {
+    clearTimeout(rt);
+    rt = setTimeout(function () { ScrollTrigger.refresh(); sweep(); }, 200);
+  }
+  window.addEventListener("resize", relayout);
+  window.addEventListener("orientationchange", relayout);
+  window.addEventListener("load", function () { ScrollTrigger.refresh(); });
+})();
+</script>
+</body>
+</html>
