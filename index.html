@@ -903,14 +903,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
 
     <div class="clip hero__cardwrap" data-hero-featured-wrap>
-      <div class="hero__card" data-hero-featured>
+      <form class="hero__card aeva-form" data-hero-featured novalidate>
         <h2>Book your consult</h2>
         <p>Takes 30 seconds. We reply the same business day.</p>
-        <iframe src="https://api.aevadigital.com/api/v1/forms/597/form-view/#aeva-submit-form-id-597" title="MyForm" width="100%"
-          onload="onPageLoad('production')" id="myFormEmbed" frameborder="0">
-        </iframe>
-        <script type="text/javascript" src="https://aeva-static-bucket.s3.amazonaws.com/static/js/embedAevaScript.js"></script>
-      </div>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">First name</span><input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required></label>
+          <label class="field"><span class="sr-only">Last name</span><input type="text" name="last_name" placeholder="Last name" autocomplete="family-name" required></label>
+        </div>
+        <label class="field"><span class="sr-only">Email</span><input type="email" name="email" placeholder="Email" autocomplete="email" required></label>
+        <label class="field"><span class="sr-only">Phone</span><input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>By submitting this form, you agree to receive text messages from Eternal Wellness Medical Spa. Rates may be applied. You may unsubscribe any time by replying STOP.</span></label>
+        <p class="form-error" role="alert" aria-live="polite"></p>
+        <button class="btn btn--block" type="submit"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim 20% off</span></span></button>
+      </form>
     </div>
   </div>
 
@@ -1363,12 +1368,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </span>
       <p class="formcol__sub">Send this and we reply the same business day with two or three appointment times.</p>
 
-      <div class="fields">
-        <iframe src="https://api.aevadigital.com/api/v1/forms/597/form-view/" title="MyForm" width="100%"
-          onload="onPageLoad('production')" id="myFormEmbed" frameborder="0">
-        </iframe>
+      <form class="fields aeva-form" novalidate>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">First name</span><input type="text" name="first_name" placeholder="First name" autocomplete="given-name" required></label>
+          <label class="field"><span class="sr-only">Last name</span><input type="text" name="last_name" placeholder="Last name" autocomplete="family-name" required></label>
+        </div>
+        <div class="hcard__row">
+          <label class="field"><span class="sr-only">Email</span><input type="email" name="email" placeholder="Email" autocomplete="email" required></label>
+          <label class="field"><span class="sr-only">Phone</span><input type="tel" name="phone" placeholder="Phone" autocomplete="tel" required></label>
+        </div>
+        <label class="field field--area"><span class="sr-only">Message</span><textarea name="message" rows="3" placeholder="Message - anything you want us to know"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" required><span>By submitting this form, you agree to receive text messages from Eternal Wellness Medical Spa. Rates may be applied. You may unsubscribe any time by replying STOP.</span></label>
+        <p class="form-error" role="alert" aria-live="polite"></p>
+        <button class="btn btn--block" type="submit"><span class="btn__inner"><span class="btn__wipe"></span><span class="btn__label">Claim 20% off</span></span></button>
         <p class="form-note">New patients only, first visit, one time. Discount applies to injectables only. Cosmetic treatment is not covered by insurance.</p>
-      </div>
+      </form>
 
       <div class="reassure">
         <div class="reassure__item"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3.5 10.6l4.5 4.6 8.5-10"/></svg><span>We reply the same business day.</span></div>
@@ -1505,6 +1519,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 }
 /* --- form success note --- */
 .form-sent{font-size:14px;line-height:1.5;color:var(--clay);font-weight:500;}
+.aeva-form .form-error{display:none;font-size:13px;line-height:1.5;color:#b3261e;}
+.aeva-form .form-error.is-on{display:block;}
+.aeva-form .form-sent{font-size:14px;line-height:1.5;color:var(--clay);font-weight:500;}
+.aeva-form.is-sent .hcard__row,.aeva-form.is-sent .field,.aeva-form.is-sent .consent,
+.aeva-form.is-sent .form-error,.aeva-form.is-sent .btn{display:none;}
 </style>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.15.0/gsap.min.js" onerror="window.__ewReveal&&window.__ewReveal()"></script>
@@ -2022,21 +2041,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   /* ---------------------------------------------------------------
-     Form submit - no endpoint wired yet, so confirm in place
+     Form submit: button press feedback (API submit handled below)
      --------------------------------------------------------------- */
-  document.querySelectorAll("form").forEach(function (form) {
-    form.addEventListener("submit", function (e) {
-      e.preventDefault();
+  document.querySelectorAll(".aeva-form").forEach(function (form) {
+    form.addEventListener("submit", function () {
       var btn = form.querySelector(".btn");
       if (btn) gsap.fromTo(btn, { scale: 1 }, { scale: 0.985, duration: 0.12, ease: "power2.out", yoyo: true, repeat: 1 });
-      var note = form.querySelector(".form-sent");
-      if (!note) {
-        note = document.createElement("p");
-        note.className = "form-sent";
-        form.appendChild(note);
-      }
-      note.textContent = "Thank you. We reply the same business day with appointment times.";
-      gsap.fromTo(note, { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" });
     });
   });
 
@@ -2074,6 +2084,98 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   window.addEventListener("resize", relayout);
   window.addEventListener("orientationchange", relayout);
   window.addEventListener("load", function () { ScrollTrigger.refresh(); });
+})();
+</script>
+
+<!-- AEVA form submit (form 597). Runs without GSAP. Hero form has no message field, so it sends message "". -->
+<script>
+(function () {
+  var ENDPOINT = "https://api.aevadigital.com/api/v1/contacts/add_contact_from_form/";
+  var ORGANIZATION = "c543dd90-48c9-422e-a949-67d2b791eba7";
+  var FORM_ID = "597";
+  var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[A-Za-z]{2,}$/;
+  var TRACKING = { gclid: "google", wbraid: "google", gbraid: "google", fbclid: "meta", ttclid: "tiktok" };
+
+  function val(form, name) {
+    var el = form.elements[name];
+    return el ? (el.value || "").trim() : "";
+  }
+
+  document.querySelectorAll(".aeva-form").forEach(function (form) {
+    var btn = form.querySelector('button[type="submit"]');
+    var errEl = form.querySelector(".form-error");
+
+    function showError(msg) {
+      if (!errEl) return;
+      errEl.textContent = msg;
+      errEl.classList.toggle("is-on", !!msg);
+    }
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      showError("");
+
+      var first_name = val(form, "first_name");
+      var last_name = val(form, "last_name");
+      var email = val(form, "email");
+      var phone = val(form, "phone").replace(/\D/g, "");
+      if (phone.length === 11 && phone.charAt(0) === "1") phone = phone.slice(1);
+      var message = val(form, "message");
+      var consent = form.elements.consent && form.elements.consent.checked;
+
+      if (!first_name || !last_name) return showError("Please enter your first and last name.");
+      if (!EMAIL_RE.test(email)) return showError("Please enter a valid email address.");
+      if (!/^[0-9]{10}$/.test(phone)) return showError("Please enter a 10-digit US phone number.");
+      if (!consent) return showError("Please check the box to agree to receive text messages.");
+
+      var fd = new FormData();
+      fd.append("first_name", first_name);
+      fd.append("last_name", last_name);
+      fd.append("phone", "+1" + phone);
+      fd.append("email", email);
+      fd.append("checkbox", "on");
+      fd.append("organization", ORGANIZATION);
+      fd.append("form", FORM_ID);
+      fd.append("message", message);
+      fd.append("form_location", window.location.href);
+
+      var params = new URLSearchParams(window.location.search);
+      var trackingParam = "";
+      var adSource = "other";
+      for (var key in TRACKING) {
+        if (params.get(key)) { trackingParam = params.get(key); adSource = TRACKING[key]; break; }
+      }
+      fd.append("tracking_param", trackingParam);
+      fd.append("ad_source", adSource);
+
+      if (btn) btn.disabled = true;
+
+      fetch(ENDPOINT, { method: "POST", body: fd })
+        .then(function (res) {
+          if (!res.ok) {
+            return res.text().catch(function () { return res.statusText; }).then(function (txt) {
+              throw new Error(txt || "Server error");
+            });
+          }
+          window.dataLayer = window.dataLayer || [];
+          window.dataLayer.push({ event: "form-success" });
+
+          form.classList.add("is-sent");
+          var note = document.createElement("p");
+          note.className = "form-sent";
+          note.setAttribute("role", "status");
+          note.textContent = "Thank you. Your consultation request has been received. We reply the same business day with appointment times.";
+          var anchor = form.querySelector(".form-note");
+          form.insertBefore(note, anchor || null);
+          if (window.ScrollTrigger) window.ScrollTrigger.refresh();
+        })
+        .catch(function (err) {
+          console.error(err);
+          showError("Submission failed. Please try again or call (231) 943-6512.");
+          if (btn) btn.disabled = false;
+        });
+    });
+  });
 })();
 </script>
 </body>
